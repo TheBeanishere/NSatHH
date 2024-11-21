@@ -26,7 +26,7 @@ function scr_setmovetimer(){
 		movetimer *= 2
 	}
 	if (self.object_index = obj_marze){
-		if (obj_game.GIMP_quicked){
+		if (obj_game.GIMP_hotsoup){
 			movetimer /= 2
 		}
 	}

@@ -38,11 +38,11 @@ if (portrait = "Mathi"){
 	draw_set_color(c_white)
 	draw_set_alpha(1)
 	gpu_set_blendmode(bm_normal)
-	if (obj_game.AI_wicked > 0){
-		draw_sprite_ext(spr_customnight_portraits, obj_game.AI_wicked, x, y, 0.5, 0.5, 0, c_wicked, 1)
-		image_blend = c_wicked
+	if (obj_game.AI_marze > 0){
+		draw_sprite_ext(spr_customnight_portraits, obj_game.AI_marze, x, y, 0.5, 0.5, 0, c_marze, 1)
+		image_blend = c_marze
 	}else{
-		draw_sprite_ext(spr_customnight_portraits, obj_game.AI_wicked, x, y, 0.5, 0.5, 0, c_white, 1)
+		draw_sprite_ext(spr_customnight_portraits, obj_game.AI_marze, x, y, 0.5, 0.5, 0, c_white, 1)
 		image_blend = c_white
 	}
 	draw_self()

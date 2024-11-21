@@ -1,4 +1,4 @@
-if (global.camflipped && obj_game.AI_wicked > 0){
+if (global.camflipped && obj_game.AI_marze > 0){
 	if (stage = 0 && global.cameraselected = 2){
 		draw_set_color(c_white)
 		gpu_set_blendmode(bm_normal)

@@ -58,19 +58,19 @@ if (portrait = "Mathi"){
 			}
 		}
 	}
-}else if (portrait = "Wicked"){
+}else if (portrait = "Marze"){
 	image_index = 25
 	if (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_mouse, false, true)){
-		if ((mouse_wheel_up()||keyboard_check(vk_up)) && obj_game.AI_wicked != 20 && inputdelay <= 0){
-			obj_game.AI_wicked += 1
+		if ((mouse_wheel_up()||keyboard_check(vk_up)) && obj_game.AI_marze != 20 && inputdelay <= 0){
+			obj_game.AI_marze += 1
 			inputdelay = 3
 			audio_play_sound(sfx_customnight_up, 1, false)
 			if (obj_game.customnightchallenge != "None"){
 				obj_game.customnightchallenge = "None"
 			}
 		}
-		if ((mouse_wheel_down()||keyboard_check(vk_down)) && obj_game.AI_wicked != 0 && inputdelay <= 0){
-			obj_game.AI_wicked -= 1
+		if ((mouse_wheel_down()||keyboard_check(vk_down)) && obj_game.AI_marze != 0 && inputdelay <= 0){
+			obj_game.AI_marze -= 1
 			inputdelay = 3
 			audio_play_sound(sfx_customnight_down, 1, false)
 			if (obj_game.customnightchallenge != "None"){

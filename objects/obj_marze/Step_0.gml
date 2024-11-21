@@ -1,4 +1,4 @@
-if (obj_game.AI_wicked > 0){
+if (obj_game.AI_marze > 0){
 	if (global.camflipped){
 		if (stage = 0 && global.cameraselected = 2){
 		
@@ -48,7 +48,7 @@ if (obj_game.AI_wicked > 0){
 			}
 		}else{
 			randomize()
-			var _move = irandom_range(obj_game.AI_wicked, 20)
+			var _move = irandom_range(obj_game.AI_marze, 20)
 			if (_move = 20){
 				var _feet = irandom_range(1,3)
 				audio_play_sound(asset_get_index("sfx_footsteps_" + string(_feet)), 1, false)
@@ -98,7 +98,7 @@ if (obj_game.AI_wicked > 0){
 			scr_setmovetimer()
 			movetimer = movetimer * 2
 		}else{
-			movetimer = 120 - round(1.5 * obj_game.AI_wicked)
+			movetimer = 120 - round(1.5 * obj_game.AI_marze)
 		}
 	}
 	image_index = stage

@@ -3,6 +3,7 @@ c_mathi = #FF6A00
 c_manimo = #DF7126
 c_sports = #B3B9C4
 c_wicked = #35F063
+c_marze = #A733B3
 c_joetube = #4676C8
 c_dan = #DD0000
 c_pravi = #E62676

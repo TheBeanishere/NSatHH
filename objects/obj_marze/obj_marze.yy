@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wicked",
-    "path":"sprites/spr_wicked/spr_wicked.yy",
+    "name":"spr_marze",
+    "path":"sprites/spr_marze/spr_marze.yy",
   },
   "spriteMaskId":null,
   "visible":true,
