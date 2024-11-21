@@ -48,9 +48,9 @@ if (global.screentype = "customnight"){
 		draw_text(64, 350 + 50, "[  ] Hungry Pravi - Pravi adds +2 Usage.")
 	}
 	if (GIMP_quicked){
-		draw_text(64, 375 + 50, "[X] Quick-ed - Wicked moves just as fast as everyone else now.")
+		draw_text(64, 375 + 50, "[X] Hot soup - Marze moves just as fast as everyone else now.")
 	}else{
-		draw_text(64, 375 + 50, "[  ] Quick-ed - Wicked moves just as fast as everyone else now.")
+		draw_text(64, 375 + 50, "[  ] Hot soup - Marze moves just as fast as everyone else now.")
 	}
 	draw_text(640, 225, "CHEATS:")
 	if (CHEAT_kinddan){

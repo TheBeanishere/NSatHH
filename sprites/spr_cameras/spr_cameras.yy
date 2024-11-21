@@ -14,7 +14,7 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"1bd910a8-3c93-4740-ac42-9ed3c3dc9e7d","name":"1bd910a8-3c93-4740-ac42-9ed3c3dc9e7d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"8851bc4b-217a-4999-b573-859935977d7b","name":"8851bc4b-217a-4999-b573-859935977d7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ef5e1100-057b-4c9d-a9a4-c67e39b1c3ba","name":"ef5e1100-057b-4c9d-a9a4-c67e39b1c3ba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c7928ec8-2a20-41e8-a974-42c630bdf79e","name":"c7928ec8-2a20-41e8-a974-42c630bdf79e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"e7bb1a64-cceb-40e0-b5f9-986a0910dc56","name":"e7bb1a64-cceb-40e0-b5f9-986a0910dc56","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"942a4a0e-de94-44bd-aa88-70b0991f6791","name":"942a4a0e-de94-44bd-aa88-70b0991f6791","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"ca5a1560-8049-4e71-9df5-593d5bc5b01f","name":"ca5a1560-8049-4e71-9df5-593d5bc5b01f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
@@ -86,8 +86,8 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8851bc4b-217a-4999-b573-859935977d7b","path":"sprites/spr_cameras/spr_cameras.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"3715d870-a21c-4583-b952-b688e977e00e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ef5e1100-057b-4c9d-a9a4-c67e39b1c3ba","path":"sprites/spr_cameras/spr_cameras.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e685c8a8-0521-4e74-9b01-12162819bbdb","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c7928ec8-2a20-41e8-a974-42c630bdf79e","path":"sprites/spr_cameras/spr_cameras.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4c918261-b7fc-42a6-a7b8-e4b706c2871c","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e7bb1a64-cceb-40e0-b5f9-986a0910dc56","path":"sprites/spr_cameras/spr_cameras.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"02b87a07-51af-446b-9deb-97c7091651be","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
