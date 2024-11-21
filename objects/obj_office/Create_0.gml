@@ -1,0 +1,9 @@
+turned = false
+officeoffset = 200
+powerleft = 1500
+usage = 0
+doorleftshut = false
+doorrightshut = false
+doorbackshut = false
+image_speed = 0
+c_pravi = #E62676
