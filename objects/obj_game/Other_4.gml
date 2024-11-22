@@ -299,37 +299,38 @@ if (room = NIGHT_1){
 //	CHEAT_eyes = false
 //	CHEAT_pokeblocks = false
 //}
-//if (room = START){
-//	audio_stop_all()
-//}
-//if (room = MENU_customnight){
-//	customnightchallenge = "None"
-//	global.screentype = "customnight"
-//	audio_stop_all()
-//	audio_play_sound(mus_customize, 1, true, 1)
-//	AI_mathi = 0
-//	AI_manimo = 0
-//	AI_sports = 0
-//	AI_pravi = 0
-//	AI_ava = 0
-//	AI_joetube = 0
-//	AI_marze = 0
-//	AI_dan = 0
-//	AI_beanie = 0
-//	GIMP_nut = false
-//	GIMP_mathis = false
-//	GIMP_faulty = false
-//	GIMP_party = false
-//	GIMP_adrenaline = false
-//	GIMP_lightsleep = false
-//	GIMP_hungry = false
-//	GIMP_hotsoup = false
-//	CHEAT_kinddan = false
-//	CHEAT_arthritis = false
-//	CHEAT_heavysleep = false
-//	CHEAT_eyes = false
-//	CHEAT_pokeblocks = false
-//}
+if (room = START){
+	audio_stop_all()
+}
+if (room = MENU_customnight){
+	customnightchallenge = "None"
+	global.screentype = "customnight"
+	np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+	audio_stop_all()
+	audio_play_sound(mus_customize, 1, true, 1)
+	AI_mathi = 0
+	AI_manimo = 0
+	AI_sports = 0
+	AI_pravi = 0
+	AI_ava = 0
+	AI_joetube = 0
+	AI_marze = 0
+	AI_dan = 0
+	AI_beanie = 0
+	GIMP_nut = false
+	GIMP_mathis = false
+	GIMP_faulty = false
+	GIMP_party = false
+	GIMP_adrenaline = false
+	GIMP_lightsleep = false
+	GIMP_hungry = false
+	GIMP_hotsoup = false
+	CHEAT_kinddan = false
+	CHEAT_arthritis = false
+	CHEAT_heavysleep = false
+	CHEAT_eyes = false
+	CHEAT_pokeblocks = false
+}
 //TEMPLATE
 //	AI_mathi = 
 //	AI_manimo = 
