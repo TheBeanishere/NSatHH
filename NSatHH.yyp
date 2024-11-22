@@ -83,6 +83,7 @@
     {"id":{"name":"NIGHT_1","path":"rooms/NIGHT_1/NIGHT_1.yy",},},
     {"id":{"name":"START","path":"rooms/START/START.yy",},},
     {"id":{"name":"scr_customchoose","path":"scripts/scr_customchoose/scr_customchoose.yy",},},
+    {"id":{"name":"scr_customgimpsncheats","path":"scripts/scr_customgimpsncheats/scr_customgimpsncheats.yy",},},
     {"id":{"name":"scr_jumpscare","path":"scripts/scr_jumpscare/scr_jumpscare.yy",},},
     {"id":{"name":"scr_setmovetimer","path":"scripts/scr_setmovetimer/scr_setmovetimer.yy",},},
     {"id":{"name":"scr_week1time","path":"scripts/scr_week1time/scr_week1time.yy",},},
