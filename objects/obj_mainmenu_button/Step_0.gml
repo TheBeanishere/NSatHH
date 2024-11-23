@@ -11,16 +11,42 @@ if (position_meeting(mouse_x, mouse_y, self)){
 }
 if (menu_option = "play"){
 	image_index = 0
+	if (position_meeting(mouse_x, mouse_y, self) && mouse_check_button_pressed(mb_left)){
+		if (global.screentype = "menu_main"){
+			global.screentype = "menu_play"
+		}
+	}
 }
 if (menu_option = "option"){
 	image_index = 1
+	if (position_meeting(mouse_x, mouse_y, self) && mouse_check_button_pressed(mb_left)){
+		if (global.screentype = "menu_main"){
+			global.screentype = "menu_option"
+		}
+	}
 }
 if (menu_option = "guide"){
 	image_index = 2
+	if (position_meeting(mouse_x, mouse_y, self) && mouse_check_button_pressed(mb_left)){
+		if (global.screentype = "menu_main"){
+			global.guideoption = 1
+			global.screentype = "menu_guide"
+		}
+	}
 }
 if (menu_option = "credits"){
 	image_index = 3
+	if (position_meeting(mouse_x, mouse_y, self) && mouse_check_button_pressed(mb_left)){
+		if (global.screentype = "menu_main"){
+			global.screentype = "menu_credits"
+		}
+	}
 }
 if (menu_option = "quit"){
 	image_index = 4
+	if (position_meeting(mouse_x, mouse_y, self) && mouse_check_button_pressed(mb_left)){
+		if (global.screentype = "menu_main"){
+			global.screentype = "menu_quit"
+		}
+	}
 }

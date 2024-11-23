@@ -146,6 +146,7 @@
     {"id":{"name":"spr_manimo","path":"sprites/spr_manimo/spr_manimo.yy",},},
     {"id":{"name":"spr_marze","path":"sprites/spr_marze/spr_marze.yy",},},
     {"id":{"name":"spr_mathi","path":"sprites/spr_mathi/spr_mathi.yy",},},
+    {"id":{"name":"spr_menu_guide","path":"sprites/spr_menu_guide/spr_menu_guide.yy",},},
     {"id":{"name":"spr_mousecoliide","path":"sprites/spr_mousecoliide/spr_mousecoliide.yy",},},
     {"id":{"name":"spr_office_ava","path":"sprites/spr_office_ava/spr_office_ava.yy",},},
     {"id":{"name":"spr_office_beanie","path":"sprites/spr_office_beanie/spr_office_beanie.yy",},},

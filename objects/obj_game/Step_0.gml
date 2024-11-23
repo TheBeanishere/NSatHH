@@ -10,16 +10,28 @@ if (room = NIGHT_1){
 	global.time += 1
 }
 if (room = MENU_main){
-	if (global.screentype = "menu_main"){
-		if (logooffset <= -1){
-			logoup = false	
-		}else if (logooffset >= 1){
-			logoup = true
+	if (logooffset <= -1){
+		logoup = false	
+	}else if (logooffset >= 1){
+		logoup = true
+	}
+	if (logoup){
+		logooffset -= 0.01
+	}else{
+		logooffset += 0.01
+	}
+	if (global.screentype = "menu_guide"){
+		if (keyboard_check_pressed(vk_right)){
+			if (global.guideoption < 9){
+				global.guideoption += 1
+			}else{
+				global.guideoption = 1
+			}
 		}
-		if (logoup){
-			logooffset -= 0.01
-		}else{
-			logooffset += 0.01
+	}
+	if (global.screentype != "menu_main"){
+		if (keyboard_check_pressed(vk_escape)){
+			global.screentype = "menu_main"
 		}
 	}
 }
