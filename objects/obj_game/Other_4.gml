@@ -1,10 +1,13 @@
 global.cameraselected = 1
 if (global.aspectratio = "640x360"){
-	view_wport[0] = 360
-	view_hport[0] = 640
+	camera_set_view_size(0, 640, 360)
+	window_set_size(640, 360)
+}else if (global.aspectratio = "1920x1080"){
+	camera_set_view_size(0, 1920, 1080)
+	window_set_size(1920, 1080)
 }else{
-	view_wport[0] = 720
-	view_hport[0] = 1280
+	camera_set_view_size(0, 1280, 720)
+	window_set_size(1280, 720)
 }
 if (room = START){
 	audio_stop_all()
