@@ -1,6 +1,6 @@
 if (global.screentype = "start" && room = START){
 	draw_set_font(Normal)
-	draw_text(160, 300, "Press R and E to erase all of your data")
+	draw_text(160, 300, "Click to start.")
 }
 if (GIMP_mathis){
 	draw_set_color(mathiorange)

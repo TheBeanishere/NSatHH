@@ -2,15 +2,12 @@ if (keyboard_check_pressed(ord("F"))||keyboard_check_pressed(vk_f11)){
 	window_set_fullscreen(!window_get_fullscreen())
 }
 if (global.screentype = "start"){
-	if (keyboard_check(vk_space)){
+	if (mouse_check_button_pressed(mb_left)){
 		room_goto(MENU_main)	
 	}
 }
 if (room = NIGHT_1){
 	global.time += 1
-}
-if (keyboard_check_pressed(ord("M"))){
-	GIMP_mathis = !GIMP_mathis
 }
 if (global.time > 21720 && global.screentype = "ingame"){
 	audio_stop_all()
