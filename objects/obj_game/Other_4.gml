@@ -1,4 +1,10 @@
 global.cameraselected = 1
+if (room = START){
+	audio_stop_all()
+}
+if (room = MENU_main){
+	global.screentype = "menu_main"
+}
 if (room = NIGHT_1){
 	global.time = 0
 	global.screentype = "ingame"
@@ -299,9 +305,6 @@ if (room = NIGHT_1){
 //	CHEAT_eyes = false
 //	CHEAT_pokeblocks = false
 //}
-if (room = START){
-	audio_stop_all()
-}
 if (room = MENU_customnight){
 	customnightchallenge = "None"
 	global.screentype = "customnight"

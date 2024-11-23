@@ -9,6 +9,20 @@ if (global.screentype = "start"){
 if (room = NIGHT_1){
 	global.time += 1
 }
+if (room = MENU_main){
+	if (global.screentype = "menu_main"){
+		if (logooffset <= -1){
+			logoup = false	
+		}else if (logooffset >= 1){
+			logoup = true
+		}
+		if (logoup){
+			logooffset -= 0.01
+		}else{
+			logooffset += 0.01
+		}
+	}
+}
 if (global.time > 21720 && global.screentype = "ingame"){
 	audio_stop_all()
 	show_message("YOU WON!")

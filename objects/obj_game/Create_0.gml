@@ -6,6 +6,8 @@ global.time = 0
 customnightchallenge = "None"
 inputdelay = 0
 mathiorange = #FF6A00
+logoup = true
+logooffset = 0
 audio_group_load(music)
 audio_group_load(sfx)
 ini_open("PLAYTESTsavedata.ini")

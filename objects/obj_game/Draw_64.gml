@@ -2,10 +2,10 @@ if (global.screentype = "start" && room = START){
 	draw_set_font(Normal)
 	draw_text(160, 300, "Click to start.")
 }
-if (GIMP_mathis){
-	draw_set_color(mathiorange)
-}else{
-	draw_set_color(c_white)
+if (room = MENU_main){
+	if (global.screentype = "menu_main"){
+		draw_sprite_ext(spr_logo, 0, 640, 0 + logooffset, 1, 1, 0 + logooffset, c_white, 1)
+	}
 }
 if (global.screentype = "customnight"){
 	draw_set_font(Challenge)
