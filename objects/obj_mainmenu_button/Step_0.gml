@@ -1,4 +1,5 @@
-if (scroll >= 1279){
+y = originy + transy
+if (scroll >= 2559){
 	scroll = 0
 }
 scroll += 1
@@ -54,4 +55,11 @@ if (menu_option = "quit"){
 			global.screentype = "menu_quit"
 		}
 	}
+}
+if (global.screentype != "menu_main"){
+	transy += -(transy - 400)/15
+	image_alpha += -(image_alpha - 0)/30
+}else{
+	transy += -(transy - 0)/15
+	image_alpha += -(image_alpha - 1)/10
 }

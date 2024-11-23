@@ -131,9 +131,9 @@ if (room = MENU_main){
 			draw_text(480, 190, "Pravi enjoys playing his Saxophone. Unfortunately his saxophone causes")
 			draw_text(480, 220, "our electronics to malfunction. We tried to give him a new one but it seems")
 			draw_text(480, 250, "to be a property of Pravi himself.")
-			draw_text(480, 310, "Pravi didn't answer any questions that weren't about his Saxophone or music.")
-			draw_text(480, 340, "He also kept looking at my notes, and throwing any drawings")
-			draw_text(480, 370, "I attempted to make of him, away.")
+			draw_text(480, 310, "Pravi didn't answer any questions that weren't about his")
+			draw_text(480, 340, "Saxophone or music. He also kept looking at my notes,")
+			draw_text(480, 370, "and throwing any drawings I attempted to make of him away.")
 			draw_set_font(Title)
 			draw_text(480, 460, "VERDICT: Hold indefinitely.")
 		}
