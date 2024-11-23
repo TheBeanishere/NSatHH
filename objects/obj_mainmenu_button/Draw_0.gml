@@ -3,6 +3,7 @@ gpu_set_blendmode(bm_normal)
 draw_set_font(Normal)
 if (global.screentype = "menu_main"){
 	if (menu_option = "play"){
+		draw_sprite_ext(spr_menubg, 0, 0 - scroll, 0 - scroll, 1, 1, 0, c_white, 0.2)
 		draw_set_alpha(drawing_alpha)
 		draw_text(x - 25, y + yoffset, "Play.")
 	}

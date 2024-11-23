@@ -8,6 +8,22 @@ if (room = MENU_main){
 		draw_set_font(Normal)
 		draw_text(0, 7, "Escape to leave.")
 	}
+	if (global.screentype = "menu_credits"){
+		draw_set_font(Challenge)
+		draw_text(128, 100, "Beanie Bopper - Art, Coding, SFX, and voicing herself")
+		draw_text(128, 130, "Mathi5000 - Voicing Mathi")
+		draw_text(128, 160, "Pravi - Playing his saxophone")
+		draw_text(128, 190, "Manimo - Voicing Manimo")
+		draw_text(128, 220, "Cheez_o - Voicing Sports")
+		draw_text(128, 250, "Ava - Voicing Ava")
+		draw_text(128, 280, "Marze - Voicing Marze")
+		draw_text(128, 310, "The_Joetube - Voicing Joetube")
+		draw_text(128, 340, "Warriordan2008 - Voicing Warriordan")
+		draw_text(128, 370, "UhDxNg_ - Voicing DX(Phone guy)")
+		draw_text(128, 430, "Scott Cawthon - Made Five Nights at Freddy's")
+		draw_text(128, 460, "freesound.ord - Original source of SFX")
+		
+	}
 	if (global.screentype = "menu_guide"){
 		draw_sprite(spr_menu_guide, 0, 0, 0)
 		if (global.guideoption = "1"){
@@ -128,12 +144,9 @@ if (room = MENU_main){
 			draw_text(960, 100, "Method: Insanity")
 			draw_text(480, 130, "Homeland: Different dimension.")
 			draw_text(960, 130, "Species:" + choose("Human", "Human", "Human", "Bean", "Husky", "Neither"))
-			draw_text(480, 190, "Marze is slow, but persistent, never fully backing down")
-			draw_text(480, 220, "their tactics are similar to atrition warfare. perhaps we")
-			draw_text(480, 250, "use their ''cartoon'' powers to our advantage.")
-			draw_text(480, 310, "Marze refused the interview. And also insulted me :(")
+			draw_text(480, 190, "Get fucked, I messed with your files dumbass.")
 			draw_set_font(Title)
-			draw_text(480, 460, "VERDICT: Use like a weapon.")
+			draw_text(480, 460, "VERDICT: Nothing")
 		}
 		if (global.guideoption = "9"){
 			draw_set_font(Challenge)
@@ -142,12 +155,12 @@ if (room = MENU_main){
 			draw_text(960, 100, "Method: Indirect")
 			draw_text(480, 130, "Homeland: Not native to Earth")
 			draw_text(960, 130, "Species: Lunyan")
-			draw_text(480, 190, "Marze is slow, but persistent, never fully backing down")
-			draw_text(480, 220, "their tactics are similar to atrition warfare. perhaps we")
-			draw_text(480, 250, "use their ''cartoon'' powers to our advantage.")
-			draw_text(480, 310, "Marze refused the interview. And also insulted me :(")
+			draw_text(480, 190, "AVA WOULDN'T SHUT UP. It was helpful for them to give")
+			draw_text(480, 220, "so  much info about lunyans so easily away but there")
+			draw_text(480, 250, "was too much to write down it all.")
+			draw_text(480, 310, "Ava did not want to be interviewed about herself.")
 			draw_set_font(Title)
-			draw_text(480, 460, "VERDICT: Use like a weapon.")
+			draw_text(480, 460, "VERDICT: Possible promotion to researcher")
 		}
 	}
 }

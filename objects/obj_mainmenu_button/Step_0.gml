@@ -1,3 +1,7 @@
+if (scroll >= 1279){
+	scroll = 0
+}
+scroll += 1
 if (position_meeting(mouse_x, mouse_y, self)){
 	image_xscale += -(image_xscale - 0.4)/6
 	image_yscale += -(image_yscale - 0.4)/6
@@ -21,6 +25,7 @@ if (menu_option = "option"){
 	image_index = 1
 	if (position_meeting(mouse_x, mouse_y, self) && mouse_check_button_pressed(mb_left)){
 		if (global.screentype = "menu_main"){
+			obj_options.choice = "volume"
 			global.screentype = "menu_option"
 		}
 	}
