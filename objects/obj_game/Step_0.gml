@@ -3,7 +3,7 @@ if (keyboard_check_pressed(ord("F"))||keyboard_check_pressed(vk_f11)){
 }
 if (global.screentype = "start"){
 	if (keyboard_check(vk_space)){
-		room_goto(MENU_customnight)	
+		room_goto(MENU_main)	
 	}
 }
 if (room = NIGHT_1){

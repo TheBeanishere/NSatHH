@@ -80,6 +80,7 @@
     {"id":{"name":"obj_warriordan","path":"objects/obj_warriordan/obj_warriordan.yy",},},
     {"id":{"name":"objNekoPresenceDemo","path":"objects/objNekoPresenceDemo/objNekoPresenceDemo.yy",},},
     {"id":{"name":"MENU_customnight","path":"rooms/MENU_customnight/MENU_customnight.yy",},},
+    {"id":{"name":"MENU_main","path":"rooms/MENU_main/MENU_main.yy",},},
     {"id":{"name":"NIGHT_1","path":"rooms/NIGHT_1/NIGHT_1.yy",},},
     {"id":{"name":"START","path":"rooms/START/START.yy",},},
     {"id":{"name":"scr_customchoose","path":"scripts/scr_customchoose/scr_customchoose.yy",},},
@@ -165,6 +166,7 @@
     {"roomId":{"name":"START","path":"rooms/START/START.yy",},},
     {"roomId":{"name":"NIGHT_1","path":"rooms/NIGHT_1/NIGHT_1.yy",},},
     {"roomId":{"name":"MENU_customnight","path":"rooms/MENU_customnight/MENU_customnight.yy",},},
+    {"roomId":{"name":"MENU_main","path":"rooms/MENU_main/MENU_main.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
