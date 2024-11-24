@@ -57,6 +57,39 @@ if (global.screentype = "menu_option"){
 					window_set_size(1280, 720)
 				}
 			break;
+			case "erase":
+				if (saveerase < 1){
+					saveerase += 1	
+				}else{
+					ini_open("savedata.ini")
+					ini_write_real("nights", "night1", 0)
+					ini_write_real("nights", "night2", 0)
+					ini_write_real("nights", "night3", 0)
+					ini_write_real("nights", "night4", 0)
+					ini_write_real("nights", "night5", 0)
+					ini_write_real("nights", "night6", 0)
+					ini_write_real("nights", "night7", 0)
+					ini_write_real("nights", "night8", 0)
+					ini_write_real("nights", "night9", 0)
+					ini_write_real("nights", "night10", 0)
+					ini_write_real("weeks", "week1", 0)
+					ini_write_real("weeks", "week2", 0)
+					ini_write_real("challenges", "warmth", 0)
+					ini_write_real("challenges", "bitingcold", 0)
+					ini_write_real("challenges", "tryhards", 0)
+					ini_write_real("challenges", "asylum", 0)
+					ini_write_real("challenges", "circus", 0)
+					ini_write_real("challenges", "warriordantrial", 0)
+					ini_write_real("challenges", "lullaby", 0)
+					ini_write_real("challenges", "beanboppers", 0)
+					ini_write_real("challenges", "crackshot", 0)
+					ini_write_real("challenges", "germany", 0)
+					ini_write_real("challenges", "latenight", 0)
+					ini_write_real("challenges", "mongolia", 0)
+					ini_write_real("challenges", "jesse", 0)
+					ini_close()
+					saveerase = 0
+				}
 			default:
 				
 			break;
@@ -96,6 +129,11 @@ if (global.screentype = "menu_option"){
 				choice = "aspect"
 			break;
 			case "aspect":
+				saveerase = 0
+				choice = "erase"
+			break;
+			case "erase":
+				saveerase = 0
 				choice = "volume"
 			break;
 			default:
@@ -106,7 +144,8 @@ if (global.screentype = "menu_option"){
 	if (keyboard_check_pressed(vk_up)){
 		switch (choice){
 			case "volume":
-				choice = "aspect"
+				saveerase = 0
+				choice = "erase"
 			break;
 			case "fullscreen":
 				choice = "volume"
@@ -119,6 +158,10 @@ if (global.screentype = "menu_option"){
 			break;
 			case "aspect":
 				choice = "jumpscare"
+			break;
+			case "erase":
+				saveerase = 0
+				choice = "aspect"
 			break;
 			default:
 				choice = "volume"

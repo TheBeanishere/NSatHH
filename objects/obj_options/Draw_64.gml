@@ -20,6 +20,13 @@ if (global.screentype = "menu_option"){
 		draw_text(125, 240, "Jumpscares: Off")
 	}
 	draw_text(125, 280, "Aspect Ratio:" + string(global.aspectratio))
+	if (saveerase = 0){
+		draw_text(125, 320, "Erase ALL SAVE DATA")
+	}else if (saveerase = 1){
+		draw_text(125, 320, "You sure?")
+	}else if (saveerase = 2){
+		draw_text(125, 320, "Data erased. You're starting from nothing again! :D")
+	}
 	switch (choice){
 		case "volume":
 			draw_text(105, 120, ">")
@@ -35,6 +42,9 @@ if (global.screentype = "menu_option"){
 		break;
 		case "aspect":
 			draw_text(105, 280, ">")
+		break;
+		case "erase":
+			draw_text(105, 320, ">")
 		break;
 		default:
 			
