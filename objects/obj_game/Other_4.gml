@@ -21,7 +21,7 @@ if (room = NIGHT_1){
 	global.currentnight = 1
 	np_setpresence("12 AM","Night " + string(global.currentnight), "bigicon", "")
 	audio_stop_all()
-	audio_play_sound(mus_customize, 1, true, 1)
+	//audio_play_sound(mus_customize, 1, true, 1)
 	AI_mathi = 0
 	AI_manimo = 0
 	AI_sports = 0
@@ -30,16 +30,16 @@ if (room = NIGHT_1){
 	AI_joetube = 0
 	AI_marze = 0
 	AI_dan = 0
-	AI_beanie = 20
-	AI_mathi = 4
-	AI_manimo = 2
-	AI_sports = 2
-	AI_pravi = 0
-	AI_ava = 0
-	AI_joetube = 0
-	AI_marze = 0
-	AI_dan = 0
 	AI_beanie = 0
+	//AI_mathi = 4
+	//AI_manimo = 2
+	//AI_sports = 2
+	//AI_pravi = 0
+	//AI_ava = 0
+	//AI_joetube = 0
+	//AI_marze = 0
+	//AI_dan = 0
+	//AI_beanie = 0
 	GIMP_nut = false
 	GIMP_mathis = false
 	GIMP_faulty = false
