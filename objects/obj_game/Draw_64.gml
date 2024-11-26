@@ -168,6 +168,10 @@ if (global.screentype = "customnight"){
 	draw_set_font(Challenge)
 	draw_text(64, 170, "CHALLENGE: " + customnightchallenge)
 	draw_set_font(Normal)
+	draw_text(64, 500, "Change challenge with left and right arrow keys.")
+	draw_text(64, 530, "Scroll wheel to change AI levels.")
+	draw_text(64, 560, "Click on gimps or cheats to enable or disable them.")
+	draw_text(64, 590, "Press enter to begin the night.")
 	draw_text(64, 225, "GIMPS:")
 	if (GIMP_nut){
 		draw_text(64, 250, "[X] Nut Mode - Coconut messes with you!")
