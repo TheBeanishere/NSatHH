@@ -53,6 +53,7 @@ if (menu_option = "quit"){
 	if (position_meeting(mouse_x, mouse_y, self) && mouse_check_button_pressed(mb_left)){
 		if (global.screentype = "menu_main"){
 			global.screentype = "menu_quit"
+			game_end()
 		}
 	}
 }

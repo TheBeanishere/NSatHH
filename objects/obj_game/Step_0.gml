@@ -3,7 +3,13 @@ if (keyboard_check_pressed(ord("F"))||keyboard_check_pressed(vk_f11)){
 }
 if (global.screentype = "start"){
 	if (mouse_check_button_pressed(mb_left)){
-		room_goto(MENU_main)	
+		randomize()
+		var _thing = irandom_range(1,8473)
+		if (_thing < 10){
+			room_goto(boot)
+		}else{
+			room_goto(MENU_main)	
+		}
 	}
 }
 if (room = NIGHT_1){
@@ -49,6 +55,10 @@ if (global.screentype = "customnight" && room = MENU_customnight){
 	if (keyboard_check_pressed(vk_escape)){
 		audio_stop_all()
 		room_goto(MENU_main)
+	}
+	if (keyboard_check_pressed(vk_enter)){
+		audio_stop_all()
+		room_goto(NIGHT_CUSTOM)
 	}
 	if (keyboard_check_pressed(vk_right)){
 		audio_play_sound(sfx_customnight_up, 1, false)

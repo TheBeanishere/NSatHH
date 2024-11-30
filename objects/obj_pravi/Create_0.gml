@@ -1,3 +1,4 @@
 active = false
-movetimer = noone
+movetimer = 0
 cam_location = 0
+scr_setmovetimer()

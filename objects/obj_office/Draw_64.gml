@@ -4,8 +4,11 @@ draw_set_color(c_black)
 draw_rectangle(0, 0, 250, 60, false)
 draw_set_alpha(1)
 draw_set_color(c_white)
-if (room = NIGHT_1||room = NIGHT_TUTORIAL||room = NIGHT_MEDIUM||room = NIGHT_HARD||room = NIGHT_ALL20){
+if (room = NIGHT_1){
 	scr_week1time()
+}
+if (room = NIGHT_CUSTOM){
+	scr_customtime()
 }
 if (obj_pravi.active){
 	draw_set_color(c_pravi)
