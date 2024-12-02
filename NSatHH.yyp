@@ -120,6 +120,8 @@
     {"id":{"name":"mus_customize","path":"sounds/mus_customize/mus_customize.yy",},},
     {"id":{"name":"mus_forgotteneulogy","path":"sounds/mus_forgotteneulogy/mus_forgotteneulogy.yy",},},
     {"id":{"name":"mus_holdingdeath","path":"sounds/mus_holdingdeath/mus_holdingdeath.yy",},},
+    {"id":{"name":"mus_infinityended","path":"sounds/mus_infinityended/mus_infinityended.yy",},},
+    {"id":{"name":"mus_snoopersnoose","path":"sounds/mus_snoopersnoose/mus_snoopersnoose.yy",},},
     {"id":{"name":"sfx_aggro_beanie_1","path":"sounds/sfx_aggro_beanie_1/sfx_aggro_beanie_1.yy",},},
     {"id":{"name":"sfx_aggro_beanie_2","path":"sounds/sfx_aggro_beanie_2/sfx_aggro_beanie_2.yy",},},
     {"id":{"name":"sfx_aggro_beanie_3","path":"sounds/sfx_aggro_beanie_3/sfx_aggro_beanie_3.yy",},},
