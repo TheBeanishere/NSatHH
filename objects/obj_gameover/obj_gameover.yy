@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gameover",
-    "path":"sprites/spr_gameover/spr_gameover.yy",
+    "name":"spr_host_gameoverbg",
+    "path":"sprites/spr_host_gameoverbg/spr_host_gameoverbg.yy",
   },
   "spriteMaskId":null,
   "visible":true,
