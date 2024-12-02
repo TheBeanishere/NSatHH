@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":40.0,
+  "duration":37.894737,
   "name":"mus_snoopersnoose",
   "parent":{
     "name":"Sounds",
