@@ -18,7 +18,7 @@ if (obj_game.AI_beanie > 0){
 			movetimer = movetimer * 4
 		}
 	}
-	if  (global.camflipped && global.cameraselected = cam && keyboard_check(ord("Z"))){
+	if  (global.camflipped && global.cameraselected = cam && keyboard_check(ord("Z")) && obj_office.powerleft > 0){
 		image_alpha -= 0.05
 		if (image_alpha <= 0.1){
 			randomize()

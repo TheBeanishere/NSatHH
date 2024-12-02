@@ -34,6 +34,13 @@ if (room = MENU_main){
 				global.guideoption = 1
 			}
 		}
+		if (keyboard_check_pressed(vk_left)){
+			if (global.guideoption > 1){
+				global.guideoption -= 1
+			}else{
+				global.guideoption = 9
+			}
+		}
 	}
 	if (global.screentype != "menu_main"){
 		if (keyboard_check_pressed(vk_escape)){

@@ -1,6 +1,39 @@
 if (global.screentype = "menu_option"){
 	if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_left)){
 		switch (choice){
+			case "achieve":
+				if (saveerase < 2){
+					saveerase += 1	
+				}else{
+					ini_open("achievementdata.ini")
+					ini_write_real("achievements", "endlesslong", 0)
+					ini_write_real("achievements", "alldeaths", 0)
+					ini_write_real("achievements", "pravihate", 0)
+					ini_write_real("achievements", "pravilove", 0)
+					ini_write_real("achievements", "transphobia", 0)
+					ini_write_real("achievements", "joetube", 0)
+					ini_write_real("achievements", "custom", 0)
+					ini_write_real("achievements", "billcipher", 0)
+					ini_write_real("achievements", "lunyaner", 0)
+					ini_write_real("achievements", "marze", 0)
+					ini_write_real("achievements", "week1perfect", 0)
+					ini_write_real("achievements", "week2perfect", 0)
+					obj_game.ACHIEVE_endlesslong = ini_read_real("achievements", "endlesslong", 0)
+					obj_game.ACHIEVE_alldeaths = ini_read_real("achievements", "alldeaths", 0)
+					obj_game.ACHIEVE_pravihate = ini_read_real("achievements", "pravihate", 0)
+					obj_game.ACHIEVE_pravilove = ini_read_real("achievements", "pravilove", 0)
+					obj_game.ACHIEVE_transphobia = ini_read_real("achievements", "transphobia", 0)
+					obj_game.ACHIEVE_joetube = ini_read_real("achievements", "joetube", 0)
+					obj_game.ACHIEVE_custom = ini_read_real("achievements", "custom", 0)
+					obj_game.ACHIEVE_billcipher = ini_read_real("achievements", "billcipher", 0)
+					obj_game.ACHIEVE_lunyaner = ini_read_real("achievements", "lunyaner", 0)
+					obj_game.ACHIEVE_marze = ini_read_real("achievements", "marze", 0)
+					obj_game.ACHIEVE_week1perfect = ini_read_real("achievements", "week1perfect", 0)
+					obj_game.ACHIEVE_week2perfect = ini_read_real("achievements", "week2perfect", 0)
+					ini_close()
+					saveerase = 0
+				}
+			break;
 			case "volume":
 				
 			break;
@@ -87,6 +120,7 @@ if (global.screentype = "menu_option"){
 					ini_write_real("challenges", "latenight", 0)
 					ini_write_real("challenges", "mongolia", 0)
 					ini_write_real("challenges", "jesse", 0)
+					ini_write_real("endless", "highscore", 0)
 					obj_game.WIN_night1 = ini_read_real("nights", "night1", 0)
 					obj_game.WIN_night2 = ini_read_real("nights", "night2", 0)
 					obj_game.WIN_night3 = ini_read_real("nights", "night3", 0)
@@ -112,6 +146,7 @@ if (global.screentype = "menu_option"){
 					obj_game.WIN_challenge_latenight = ini_read_real("challenges", "latenight", 0)
 					obj_game.WIN_challenge_mongolia = ini_read_real("challenges", "mongolia", 0)
 					obj_game.WIN_challenge_jesse = ini_read_real("challenges", "jesse", 0)
+					obj_game.WIN_endless_highscore = ini_read_real("endless", "highscore", 0)
 					ini_close()
 					saveerase = 0
 				}
@@ -159,6 +194,10 @@ if (global.screentype = "menu_option"){
 			break;
 			case "erase":
 				saveerase = 0
+				choice = "achieve"
+			break;
+			case "achieve":
+				saveerase = 0
 				choice = "volume"
 			break;
 			default:
@@ -170,7 +209,7 @@ if (global.screentype = "menu_option"){
 		switch (choice){
 			case "volume":
 				saveerase = 0
-				choice = "erase"
+				choice = "achieve"
 			break;
 			case "fullscreen":
 				choice = "volume"
@@ -187,6 +226,10 @@ if (global.screentype = "menu_option"){
 			case "erase":
 				saveerase = 0
 				choice = "aspect"
+			break;
+			case "achieve":
+				saveerase = 0
+				choice = "erase"
 			break;
 			default:
 				choice = "volume"

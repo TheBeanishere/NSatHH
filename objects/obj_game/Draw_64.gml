@@ -24,27 +24,23 @@ if (room = MENU_main){
 		draw_text(128, 460, "freesound.ord - Original source of SFX")
 		
 	}
-	if (global.screentype = "menu_guide"){
-		draw_sprite(spr_menu_guide, 0, 0, 0)
+	if (obj_mainmenu_button.guidebook_alpha > 0){
+		draw_sprite_ext(spr_menu_guide, 0, 0, 0, 1, 1, 0, c_white, obj_mainmenu_button.guidebook_alpha)
+		draw_set_alpha(obj_mainmenu_button.guidebook_alpha)
 		if (global.guideoption = "1"){
 			draw_set_font(Challenge)
-			draw_sprite(spr_menu_guide, global.guideoption, 0, 0)
+			draw_sprite_ext(spr_menu_guide, global.guideoption, 0, 0, 1, 1, 0, c_white, obj_mainmenu_button.guidebook_alpha)
 			draw_text(480, 100, "Subject: Mathi5000")
 			draw_text(960, 100, "Method: Consumption")
 			draw_text(480, 130, "Homeland: Germany")
 			draw_text(960, 130, "Species: Stickman")
-			draw_text(480, 190, "Mathi doesn't have any consistency, so far what I've noticed")
-			draw_text(480, 220, "he simply does what he wants and shows aggression on a whim,")
-			draw_text(480, 250, "best course of action is holding Mathi here indefinitely.")
-			draw_text(480, 310, "During the interview Mathi was friendly, and personable")
-			draw_text(480, 340, "apparently Mathi also enjoy creating music, I also learned")
-			draw_text(480, 370, "that Mathi and Pravi are brothers.")
+			draw_text_ext(480, 190, "Mathi doesn't have any consistency, so far what I've noticed he simply does what he wants and shows aggression on a whim, best course of action is holding Mathi here indefinitely. During the interview Mathi was friendly, and personable apparently Mathi also enjoy creating music, I also learned that Mathi and Pravi are brothers.", 30, 750)
 			draw_set_font(Title)
 			draw_text(480, 430, "VERDICT: Indefinite Holding.")
 		}
 		if (global.guideoption = "2"){
 			draw_set_font(Challenge)
-			draw_sprite(spr_menu_guide, global.guideoption, 0, 0)
+			draw_sprite_ext(spr_menu_guide, global.guideoption, 0, 0, 1, 1, 0, c_white, obj_mainmenu_button.guidebook_alpha)
 			draw_text(480, 100, "Subject: Manimo")
 			draw_text(960, 100, "Method: Unknown")
 			draw_text(480, 130, "Homeland: The U.K.*")
@@ -60,7 +56,7 @@ if (room = MENU_main){
 		}
 		if (global.guideoption = "3"){
 			draw_set_font(Challenge)
-			draw_sprite(spr_menu_guide, global.guideoption, 0, 0)
+			draw_sprite_ext(spr_menu_guide, global.guideoption, 0, 0, 1, 1, 0, c_white, obj_mainmenu_button.guidebook_alpha)
 			draw_text(480, 100, "Subject: Sports")
 			draw_text(960, 100, "Method: Blunt force trauma")
 			draw_text(480, 130, "Homeland: Britain")
@@ -78,7 +74,7 @@ if (room = MENU_main){
 		}
 		if (global.guideoption = "4"){
 			draw_set_font(Challenge)
-			draw_sprite(spr_menu_guide, global.guideoption, 0, 0)
+			draw_sprite_ext(spr_menu_guide, global.guideoption, 0, 0, 1, 1, 0, c_white, obj_mainmenu_button.guidebook_alpha)
 			draw_text(480, 100, "Subject: Marze")
 			draw_text(960, 100, "Method: Tearing")
 			draw_text(480, 130, "Homeland: The U.S.")
@@ -92,7 +88,7 @@ if (room = MENU_main){
 		}
 		if (global.guideoption = "5"){
 			draw_set_font(Challenge)
-			draw_sprite(spr_menu_guide, global.guideoption, 0, 0)
+			draw_sprite_ext(spr_menu_guide, global.guideoption, 0, 0, 1, 1, 0, c_white, obj_mainmenu_button.guidebook_alpha)
 			draw_text(480, 100, "Subject: Joetube")
 			draw_text(960, 100, "Method: Mauling")
 			draw_text(480, 130, "Homeland: Sinnoh")
@@ -108,7 +104,7 @@ if (room = MENU_main){
 		}
 		if (global.guideoption = "6"){
 			draw_set_font(Challenge)
-			draw_sprite(spr_menu_guide, global.guideoption, 0, 0)
+			draw_sprite_ext(spr_menu_guide, global.guideoption, 0, 0, 1, 1, 0, c_white, obj_mainmenu_button.guidebook_alpha)
 			draw_text(480, 100, "Subject: Warriordan")
 			draw_text(960, 100, "Method: Indirect")
 			draw_text(480, 130, "Homeland: India")
@@ -123,7 +119,7 @@ if (room = MENU_main){
 		}
 		if (global.guideoption = "7"){
 			draw_set_font(Challenge)
-			draw_sprite(spr_menu_guide, global.guideoption, 0, 0)
+			draw_sprite_ext(spr_menu_guide, global.guideoption, 0, 0, 1, 1, 0, c_white, obj_mainmenu_button.guidebook_alpha)
 			draw_text(480, 100, "Subject: Pravi")
 			draw_text(960, 100, "Method: Indirect")
 			draw_text(480, 130, "Homeland: Not Indonesia")
@@ -139,7 +135,7 @@ if (room = MENU_main){
 		}
 		if (global.guideoption = "8"){
 			draw_set_font(Challenge)
-			draw_sprite(spr_menu_guide, global.guideoption, 0, 0)
+			draw_sprite_ext(spr_menu_guide, global.guideoption, 0, 0, 1, 1, 0, c_white, obj_mainmenu_button.guidebook_alpha)
 			draw_text(480, 100, "Subject: Beanie")
 			draw_text(960, 100, "Method: Insanity")
 			draw_text(480, 130, "Homeland: Different dimension.")
@@ -150,7 +146,7 @@ if (room = MENU_main){
 		}
 		if (global.guideoption = "9"){
 			draw_set_font(Challenge)
-			draw_sprite(spr_menu_guide, global.guideoption, 0, 0)
+			draw_sprite_ext(spr_menu_guide, global.guideoption, 0, 0, 1, 1, 0, c_white, obj_mainmenu_button.guidebook_alpha)
 			draw_text(480, 100, "Subject: Ava")
 			draw_text(960, 100, "Method: Indirect")
 			draw_text(480, 130, "Homeland: Not native to Earth")

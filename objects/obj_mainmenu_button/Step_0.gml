@@ -3,6 +3,12 @@ if (scroll >= 2559){
 	scroll = 0
 }
 scroll += 1
+if (global.screentype = "menu_guide"){
+	guidebook_alpha += -(guidebook_alpha - 1)/8
+}else{
+	guidebook_alpha += -(guidebook_alpha - 0)/8
+}
+
 if (position_meeting(mouse_x, mouse_y, self)){
 	image_xscale += -(image_xscale - 0.4)/6
 	image_yscale += -(image_yscale - 0.4)/6
