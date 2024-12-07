@@ -1,3 +1,3 @@
 image_speed = 0
-wind = 8500
+wind = 17000
 woken = false
