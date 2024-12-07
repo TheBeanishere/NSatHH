@@ -14,7 +14,8 @@ if (obj_game.AI_dan > 0 && !succeeded){
 					camtoshow = 7
 					camtobring = 7
 				}
-				audio_play_sound(sfx_bonk_generic, 1, false)
+				audio_play_sound(sfx_bonk_dan, 1, false)
+				scr_setmovetimer()
 			}else{
 				audio_play_sound(sfx_generator_break, 1, false)
 				obj_generator.off = true
@@ -41,6 +42,11 @@ if (obj_game.AI_dan > 0 && !succeeded){
 			}else{
 				scr_setmovetimer()
 			}
+		}
+		if (stage = 3){
+			randomize()
+			var _sound = choose(sfx_aggro_dan_1, sfx_aggro_dan_2, sfx_aggro_dan_3)
+			audio_play_sound(_sound, 1, false)
 		}
 	}
 }

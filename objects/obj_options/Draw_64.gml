@@ -42,17 +42,6 @@ if (global.screentype = "menu_option"){
 	}else{
 		draw_text(125, 320, "Erase ALL SAVE DATA")
 	}
-	if (choice = "achieve"){	
-		if (saveerase = 0){
-			draw_text(125, 360, "Erase ALL ACHIEVEMENT DATA")
-		}else if (saveerase = 1){
-			draw_text(125, 360, "You sure?")
-		}else if (saveerase = 2){
-			draw_text(125, 360, "Acheievements take a while to get back, you sure?")
-		}
-	}else{
-		draw_text(125, 360, "Erase ALL ACHIEVEMENT DATA")
-	}
 	switch (choice){
 		case "volume":
 			draw_text(105, 120, ">")

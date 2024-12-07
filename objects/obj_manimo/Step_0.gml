@@ -58,7 +58,7 @@ if (obj_game.AI_manimo > 0){
 				if (stage != 6){
 					stage += 1
 					if (stage = 6){
-						var _sound = irandom_range(1,6)
+						var _sound = irandom_range(1,4)
 						audio_play_sound(asset_get_index("sfx_aggro_manimo_" + string(_sound)), 1, false)
 					}
 				}		

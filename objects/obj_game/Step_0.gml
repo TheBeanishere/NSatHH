@@ -2,7 +2,7 @@ if (keyboard_check_pressed(ord("F"))||keyboard_check_pressed(vk_f11)){
 	window_set_fullscreen(!window_get_fullscreen())
 }
 if (global.screentype = "start"){
-	if (mouse_check_button_pressed(mb_left)){
+	if (mouse_check_button_pressed(mb_left)  && !instance_exists(obj_roomtrans)){
 		randomize()
 		var _thing = irandom_range(1,8473)
 		if (_thing < 10){
@@ -12,7 +12,7 @@ if (global.screentype = "start"){
 		}
 	}
 }
-if (room = NIGHT_1){
+if (global.screentype = "ingame"){
 	global.time += 1
 }
 if (room = MENU_main){
@@ -43,7 +43,7 @@ if (room = MENU_main){
 		}
 	}
 	if (global.screentype != "menu_main"){
-		if (keyboard_check_pressed(vk_escape)){
+		if (keyboard_check_pressed(vk_escape) && !instance_exists(obj_roomtrans)){
 			global.screentype = "menu_main"
 		}
 	}
@@ -65,7 +65,10 @@ if (global.screentype = "customnight" && room = MENU_customnight){
 	}
 	if (keyboard_check_pressed(vk_enter)){
 		audio_stop_all()
-		room_goto(NIGHT_CUSTOM)
+		with instance_create_layer(0, 0, "trans", obj_roomtrans){
+			roomdes = NIGHT_CUSTOM
+			loadtext = "12 AM " + other.customnightchallenge
+		}
 	}
 	if (keyboard_check_pressed(vk_right)){
 		audio_play_sound(sfx_customnight_up, 1, false)
@@ -73,353 +76,59 @@ if (global.screentype = "customnight" && room = MENU_customnight){
 		if (customnightchallenge = "None"){
 			customnightchallenge = "Warmth"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 8
-			AI_manimo = 12
-			AI_sports = 0
-			AI_pravi = 10
-			AI_ava = 0
-			AI_joetube = 0
-			AI_marze = 0
-			AI_dan = 11
-			AI_beanie = 12
-			GIMP_nut = true
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = false
-			GIMP_adrenaline = true
-			GIMP_lightsleep = false
-			GIMP_hungry = true
-			GIMP_hotsoup = false
-			CHEAT_kinddan = true
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Warmth"){
 			customnightchallenge = "Biting Cold"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 0
-			AI_manimo = 0
-			AI_sports = 15
-			AI_pravi = 0
-			AI_ava = 15
-			AI_joetube = 12
-			AI_marze = 14
-			AI_dan = 0
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = true
-			GIMP_hungry = false
-			GIMP_hotsoup = true
-			CHEAT_kinddan = false
-			CHEAT_arthritis = true
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Biting Cold"){
 			customnightchallenge = "Tryhards"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 10
-			AI_manimo = 10
-			AI_sports = 10
-			AI_pravi = 0
-			AI_ava = 0
-			AI_joetube = 10
-			AI_marze = 10
-			AI_dan = 10
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = true
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Tryhards"){
 			customnightchallenge = "Asylum Escapees"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 14
-			AI_manimo = 12
-			AI_sports = 14
-			AI_pravi = 8
-			AI_ava = 0
-			AI_joetube = 15
-			AI_marze = 0
-			AI_dan = 16
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = true
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Asylum Escapees"){
 			customnightchallenge = "The Circus"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 0
-			AI_manimo = 18
-			AI_sports = 18
-			AI_pravi = 10
-			AI_ava = 0
-			AI_joetube = 10
-			AI_marze = 0
-			AI_dan = 0
-			AI_beanie = 7
-			GIMP_nut = true
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = true
-			GIMP_adrenaline = false
-			GIMP_lightsleep = true
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "The Circus"){
 			customnightchallenge = "Warriordan's Trial"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 17
-			AI_manimo = 12
-			AI_sports = 0
-			AI_pravi = 15
-			AI_ava = 0
-			AI_joetube = 15
-			AI_marze = 0
-			AI_dan = 17
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = true
-			GIMP_lightsleep = false
-			GIMP_hungry = true
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Warriordan's Trial"){
 			customnightchallenge = "Lullaby"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 13
-			AI_manimo = 0
-			AI_sports = 0
-			AI_pravi = 15
-			AI_ava = 20
-			AI_joetube = 15
-			AI_marze = 12
-			AI_dan = 0
-			AI_beanie = 15
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = true
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Lullaby"){
 			customnightchallenge = "Bean boppers"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 10
-			AI_manimo = 0
-			AI_sports = 8
-			AI_pravi = 10
-			AI_ava = 16
-			AI_joetube = 0
-			AI_marze = 7
-			AI_dan = 0
-			AI_beanie = 18
-			GIMP_nut = true
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = true
-			GIMP_hungry = true
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Bean boppers"){
 			customnightchallenge = "Crack shot"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 13
-			AI_manimo = 9
-			AI_sports = 13
-			AI_pravi = 9
-			AI_ava = 13
-			AI_joetube = 9
-			AI_marze = 13
-			AI_dan = 9
-			AI_beanie = 13
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = true
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = true
+			scr_customchallenge()
 		}else if (customnightchallenge = "Crack shot"){
 			customnightchallenge = "Deutsche Prazision"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 20
-			AI_manimo = 0
-			AI_sports = 0
-			AI_pravi = 20
-			AI_ava = 0
-			AI_joetube = 20
-			AI_marze = 0
-			AI_dan = 0
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = true
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Deutsche Prazision"){
 			customnightchallenge = "Late night run"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 0
-			AI_manimo = 17
-			AI_sports = 17
-			AI_pravi = 0
-			AI_ava = 17
-			AI_joetube = 0
-			AI_marze = 15
-			AI_dan = 16
-			AI_beanie = 12
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = true
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = true
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = true
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Late night run"){
 			customnightchallenge = "Mongolia Mode"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 20
-			AI_manimo = 20
-			AI_sports = 20
-			AI_pravi = 20
-			AI_ava = 20
-			AI_joetube = 20
-			AI_marze = 20
-			AI_dan = 20
-			AI_beanie = 20
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Mongolia Mode"){
 			customnightchallenge = "Jesse's Challenge"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 20
-			AI_manimo = 20
-			AI_sports = 20
-			AI_pravi = 20
-			AI_ava = 20
-			AI_joetube = 20
-			AI_marze = 20
-			AI_dan = 20
-			AI_beanie = 20
-			GIMP_nut = true
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = true
-			GIMP_adrenaline = true
-			GIMP_lightsleep = true
-			GIMP_hungry = true
-			GIMP_hotsoup = true
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Jesse's Challenge"){
 			customnightchallenge = "None"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 0
-			AI_manimo = 0
-			AI_sports = 0
-			AI_pravi = 0
-			AI_ava = 0
-			AI_joetube = 0
-			AI_marze = 0
-			AI_dan = 0
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}
 	}
 	if (keyboard_check_pressed(vk_left)){
@@ -428,353 +137,59 @@ if (global.screentype = "customnight" && room = MENU_customnight){
 		if (customnightchallenge = "Biting Cold"){
 			customnightchallenge = "Warmth"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 8
-			AI_manimo = 12
-			AI_sports = 0
-			AI_pravi = 10
-			AI_ava = 0
-			AI_joetube = 0
-			AI_marze = 0
-			AI_dan = 11
-			AI_beanie = 12
-			GIMP_nut = true
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = false
-			GIMP_adrenaline = true
-			GIMP_lightsleep = false
-			GIMP_hungry = true
-			GIMP_hotsoup = false
-			CHEAT_kinddan = true
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Tryhards"){
 			customnightchallenge = "Biting Cold"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 0
-			AI_manimo = 0
-			AI_sports = 15
-			AI_pravi = 0
-			AI_ava = 15
-			AI_joetube = 12
-			AI_marze = 14
-			AI_dan = 0
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = true
-			GIMP_hungry = false
-			GIMP_hotsoup = true
-			CHEAT_kinddan = false
-			CHEAT_arthritis = true
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Asylum Escapees"){
 			customnightchallenge = "Tryhards"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 10
-			AI_manimo = 10
-			AI_sports = 10
-			AI_pravi = 0
-			AI_ava = 0
-			AI_joetube = 10
-			AI_marze = 10
-			AI_dan = 10
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = true
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "The Circus"){
 			customnightchallenge = "Asylum Escapees"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 14
-			AI_manimo = 12
-			AI_sports = 14
-			AI_pravi = 8
-			AI_ava = 0
-			AI_joetube = 15
-			AI_marze = 0
-			AI_dan = 16
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = true
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Warriordan's Trial"){
 			customnightchallenge = "The Circus"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 0
-			AI_manimo = 18
-			AI_sports = 18
-			AI_pravi = 10
-			AI_ava = 0
-			AI_joetube = 10
-			AI_marze = 0
-			AI_dan = 0
-			AI_beanie = 7
-			GIMP_nut = true
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = true
-			GIMP_adrenaline = false
-			GIMP_lightsleep = true
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Lullaby"){
 			customnightchallenge = "Warriordan's Trial"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 17
-			AI_manimo = 12
-			AI_sports = 0
-			AI_pravi = 15
-			AI_ava = 0
-			AI_joetube = 15
-			AI_marze = 0
-			AI_dan = 17
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = true
-			GIMP_lightsleep = false
-			GIMP_hungry = true
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Bean boppers"){
 			customnightchallenge = "Lullaby"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 13
-			AI_manimo = 0
-			AI_sports = 0
-			AI_pravi = 15
-			AI_ava = 20
-			AI_joetube = 15
-			AI_marze = 12
-			AI_dan = 0
-			AI_beanie = 15
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = true
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Crack shot"){
 			customnightchallenge = "Bean boppers"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 10
-			AI_manimo = 0
-			AI_sports = 8
-			AI_pravi = 10
-			AI_ava = 16
-			AI_joetube = 0
-			AI_marze = 7
-			AI_dan = 0
-			AI_beanie = 18
-			GIMP_nut = true
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = true
-			GIMP_hungry = true
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Deutsche Prazision"){
 			customnightchallenge = "Crack shot"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 13
-			AI_manimo = 9
-			AI_sports = 13
-			AI_pravi = 9
-			AI_ava = 13
-			AI_joetube = 9
-			AI_marze = 13
-			AI_dan = 9
-			AI_beanie = 13
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = true
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = true
+			scr_customchallenge()
 		}else if (customnightchallenge = "Late night run"){
 			customnightchallenge = "Deutsche Prazision"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 20
-			AI_manimo = 0
-			AI_sports = 0
-			AI_pravi = 20
-			AI_ava = 0
-			AI_joetube = 20
-			AI_marze = 0
-			AI_dan = 0
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = true
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Mongolia Mode"){
 			customnightchallenge = "Late night run"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 0
-			AI_manimo = 17
-			AI_sports = 17
-			AI_pravi = 0
-			AI_ava = 17
-			AI_joetube = 0
-			AI_marze = 15
-			AI_dan = 16
-			AI_beanie = 12
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = false
-			GIMP_adrenaline = true
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = true
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = true
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Jesse's Challenge"){
 			customnightchallenge = "Mongolia Mode"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 20
-			AI_manimo = 20
-			AI_sports = 20
-			AI_pravi = 20
-			AI_ava = 20
-			AI_joetube = 20
-			AI_marze = 20
-			AI_dan = 20
-			AI_beanie = 20
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "None"){
 			customnightchallenge = "Jesse's Challenge"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 20
-			AI_manimo = 20
-			AI_sports = 20
-			AI_pravi = 20
-			AI_ava = 20
-			AI_joetube = 20
-			AI_marze = 20
-			AI_dan = 20
-			AI_beanie = 20
-			GIMP_nut = true
-			GIMP_mathis = false
-			GIMP_faulty = true
-			GIMP_party = true
-			GIMP_adrenaline = true
-			GIMP_lightsleep = true
-			GIMP_hungry = true
-			GIMP_hotsoup = true
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}else if (customnightchallenge = "Warmth"){
 			customnightchallenge = "None"
 			np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-			AI_mathi = 0
-			AI_manimo = 0
-			AI_sports = 0
-			AI_pravi = 0
-			AI_ava = 0
-			AI_joetube = 0
-			AI_marze = 0
-			AI_dan = 0
-			AI_beanie = 0
-			GIMP_nut = false
-			GIMP_mathis = false
-			GIMP_faulty = false
-			GIMP_party = false
-			GIMP_adrenaline = false
-			GIMP_lightsleep = false
-			GIMP_hungry = false
-			GIMP_hotsoup = false
-			CHEAT_kinddan = false
-			CHEAT_arthritis = false
-			CHEAT_heavysleep = false
-			CHEAT_eyes = false
-			CHEAT_pokeblocks = false
+			scr_customchallenge()
 		}
 	}
 }

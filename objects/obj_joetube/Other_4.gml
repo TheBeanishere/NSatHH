@@ -1,1 +1,1 @@
-movetimer = 3000
+movetimer = 1000

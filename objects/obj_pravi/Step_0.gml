@@ -44,6 +44,7 @@ if (obj_game.AI_pravi > 0){
 			audio_stop_sound(sfx_pravi_sax_1)
 			audio_stop_sound(sfx_pravi_sax_2)
 			audio_play_sound(sfx_bonk_pravi, 1, false)
+			movetimer *= 2
 		}
 	}
 }

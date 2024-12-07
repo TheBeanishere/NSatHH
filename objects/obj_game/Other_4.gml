@@ -15,6 +15,11 @@ if (room = START){
 if (room = MENU_main){
 	global.screentype = "menu_main"
 }
+if (room = MENU_customnight){
+	global.screentype = "menu_custom"
+	customnightchallenge = "None"
+	scr_customchallenge()
+}
 if (room = NIGHT_1){
 	global.time = 0
 	global.screentype = "ingame"

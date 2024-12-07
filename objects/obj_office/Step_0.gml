@@ -11,16 +11,16 @@ image_index = turned
 if (!global.camflipped){
 	if (mouse_x > 1030){
 		if (keyboard_check(vk_control)){
-			officeoffset += 20
+			officeoffset += 30
 		}else{
-			officeoffset += 5
+			officeoffset += 10
 		}
 	}
 	if (mouse_x < 251){
 		if (keyboard_check(vk_control)){
-			officeoffset -= 20
+			officeoffset -= 30
 		}else{
-			officeoffset -= 5
+			officeoffset -= 10
 		}
 	}
 }
@@ -105,10 +105,5 @@ if (powerleft <= 0){
 	global.camflipped = false
 }
 if (key_cams && powerleft > 0){
-	global.camflipped = !global.camflipped
-	if (global.camflipped){
-		usage += 0.55
-	}else{
-		usage -= 0.55
-	}
+	instance_create_layer(0, 0, "cameraphysical", obj_cameraflippy)
 }

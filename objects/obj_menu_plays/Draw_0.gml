@@ -21,7 +21,7 @@ if (gamemode = "week1"){
 		draw_text(x - 60, y + yoffset + 65, "Beat Week 1 first.")
 	}
 }else if (gamemode = "customnight"){
-	if (obj_game.WIN_night1 && obj_game.WIN_night2 && obj_game.WIN_night3 && obj_game.WIN_night4 && obj_game.WIN_night5 && obj_game.WIN_week1){
+	if (obj_game.WIN_night1 && obj_game.WIN_night2 && obj_game.WIN_night3 && obj_game.WIN_night4 && obj_game.WIN_night5 && obj_game.WIN_week1&& obj_game.WIN_night6 && obj_game.WIN_night7 && obj_game.WIN_night8 && obj_game.WIN_night9 && obj_game.WIN_night10 && obj_game.WIN_week2){
 		draw_set_alpha(drawing_alpha)
 		draw_set_font(Challenge)
 		draw_text(x - 115, y + yoffset, "Custom Night")
@@ -32,7 +32,7 @@ if (gamemode = "week1"){
 		draw_set_font(Challenge)
 		draw_text(x - 85, y + yoffset, "LOCKED.")
 		draw_set_font(Normal)
-		draw_text(x - 80, y + yoffset + 35, "Beat Week 1 first.")
+		draw_text(x - 80, y + yoffset + 35, "Beat Week 2 first.")
 	}
 }else if (gamemode = "endless"){
 	if (obj_game.WIN_night1 && obj_game.WIN_night2 && obj_game.WIN_night3 && obj_game.WIN_night4 && obj_game.WIN_night5 && obj_game.WIN_week1 && obj_game.WIN_night6 && obj_game.WIN_night7 && obj_game.WIN_night8 && obj_game.WIN_night9 && obj_game.WIN_night10 && obj_game.WIN_week2){
@@ -53,6 +53,14 @@ if (gamemode = "week1"){
 		draw_set_font(Normal)
 		draw_text(x - 50, y + yoffset + 75, "Beat Week 2 first.")
 	}
+}else if (gamemode = "customnighttest"){
+	
+		draw_set_alpha(drawing_alpha)
+		draw_set_font(Challenge)
+		draw_text(x - 165, y + yoffset, "Custom Night (PLAYTEST)")
+		draw_set_font(Normal)
+		draw_text(x - 180, y + yoffset + 35, "Subject to change. Missing Week 2 Characters.")
+	
 }
 draw_set_alpha(1)
 draw_self()

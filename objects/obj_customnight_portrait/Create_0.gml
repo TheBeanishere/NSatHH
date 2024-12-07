@@ -9,3 +9,7 @@ c_dan = #DD0000
 c_pravi = #E62676
 c_beanie = #F2CE18
 c_ava = #B568C0
+c_coconut = #BD4317
+c_roachy = #39D339
+c_valerix = #353E4F
+c_evan = #2A43D3

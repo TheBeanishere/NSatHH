@@ -2,7 +2,7 @@ if (global.screentype = "start" && room = START){
 	draw_set_font(Normal)
 	draw_text(160, 300, "Click to start.")
 }
-if (room = MENU_main){
+if (room = MENU_main && !instance_exists(obj_roomtrans)){
 	draw_sprite_ext(spr_logo, 0, 640, 0 + logooffset, 1, 1, 0 + logooffset, c_white, 1)
 	if (global.screentype != "menu_main"){
 		draw_set_font(Normal)
@@ -20,8 +20,9 @@ if (room = MENU_main){
 		draw_text(128, 310, "The_Joetube - Voicing Joetube")
 		draw_text(128, 340, "Warriordan2008 - Voicing Warriordan")
 		draw_text(128, 370, "UhDxNg_ - Voicing DX(Phone guy)")
-		draw_text(128, 430, "Scott Cawthon - Made Five Nights at Freddy's")
-		draw_text(128, 460, "freesound.ord - Original source of SFX")
+		draw_text(128, 400, "Vocal - Composed some tunes")
+		draw_text(128, 460, "Scott Cawthon - Made Five Nights at Freddy's")
+		draw_text(128, 490, "freesound.ord - Original source of SFX")
 		
 	}
 	if (obj_mainmenu_button.guidebook_alpha > 0){
@@ -170,24 +171,24 @@ if (global.screentype = "customnight"){
 	draw_text(64, 590, "Press enter to begin the night.")
 	draw_text(64, 225, "GIMPS:")
 	if (GIMP_nut){
-		draw_text(64, 250, "[X] Nut Mode - Coconut messes with you!")
+		draw_text(64, 250, "[X] Nut Mode - Coconut now spawns immediately in your office.")
 	}else{
-		draw_text(64, 250, "[  ] Nut Mode - Coconut messes with you!")
+		draw_text(64, 250, "[  ] Nut Mode - Coconut now spawns immediately in your office.")
 	}
-	if (GIMP_mathis){
-		draw_text(64, 225 + 50, "[X] Mathis - : )")
+	if (GIMP_hungry){
+		draw_text(64, 225 + 50, "[X] Hungry Pravi - Pravi adds +2 Usage.")
 	}else{
-		draw_text(64, 225 + 50, "[  ] Mathis - : )")
+		draw_text(64, 225 + 50, "[  ] Hungry Pravi - Pravi adds +2 Usage.")
 	}
 	if (GIMP_faulty){
 		draw_text(64, 250 + 50, "[X] Faulty Equipment - All your stuff sucks now. lmao.")
 	}else{
 		draw_text(64, 250 + 50, "[  ] Faulty Equipment - All your stuff sucks now. lmao.")
 	}
-	if (GIMP_party){
-		draw_text(64, 275 + 50, "[X] Bumpin' Party - Sound cues are muffled by bangin' tunes.")
+	if (GIMP_hotsoup){
+		draw_text(64, 275 + 50, "[X] Hot soup - Marze moves just as fast as everyone else now.")
 	}else{
-		draw_text(64, 275 + 50, "[  ] Bumpin' Party - Sound cues are muffled by bangin' tunes.")
+		draw_text(64, 275 + 50, "[  ] Hot soup - Marze moves just as fast as everyone else now.")
 	}
 	if (GIMP_adrenaline){
 		draw_text(64, 300 + 50, "[X] Adrenaline - Everyone moves faster.")
@@ -195,44 +196,8 @@ if (global.screentype = "customnight"){
 		draw_text(64, 300 + 50, "[  ] Adrenaline - Everyone moves faster.")
 	}
 	if (GIMP_lightsleep){
-		draw_text(64, 325 + 50, "[X] Light sleeper - Ava's music box is reduced by loud noises.")
+		draw_text(64, 325 + 50, "[X] Light sleeper - Ava's music box drains faster.")
 	}else{
-		draw_text(64, 325 + 50, "[  ] Light sleeper - Ava's music box is reduced by loud noises.")
-	}
-	if (GIMP_hungry){
-		draw_text(64, 350 + 50, "[X] Hungry Pravi - Pravi adds +2 Usage.")
-	}else{
-		draw_text(64, 350 + 50, "[  ] Hungry Pravi - Pravi adds +2 Usage.")
-	}
-	if (GIMP_hotsoup){
-		draw_text(64, 375 + 50, "[X] Hot soup - Marze moves just as fast as everyone else now.")
-	}else{
-		draw_text(64, 375 + 50, "[  ] Hot soup - Marze moves just as fast as everyone else now.")
-	}
-	draw_text(640, 225, "CHEATS:")
-	if (CHEAT_kinddan){
-		draw_text(640, 200 + 50, "[X] Kind Dan - Dan is much slower.")
-	}else{
-		draw_text(640, 200 + 50, "[  ] Kind Dan - Dan is much slower.")
-	}
-	if (CHEAT_arthritis){
-		draw_text(640, 225 + 50, "[X] Arthritis - Everyone moves slower. Except Wicked.")
-	}else{
-		draw_text(640, 225 + 50, "[  ] Arthritis - Everyone moves slower. Except Wicked.")
-	}
-	if (CHEAT_heavysleep){
-		draw_text(640, 250 + 50, "[X] Heavy sleeper - Ava's music box drains slower")
-	}else{
-		draw_text(640, 250 + 50, "[  ] Heavy sleeper - Ava's music box drains slower")
-	}
-	if (CHEAT_eyes){
-		draw_text(640, 275 + 50, "[X] Sensitive eyes - Flashlight usage in cams can slow down the guests.")
-	}else{
-		draw_text(640, 275 + 50, "[  ] Sensitive eyes - Flashlight usage in cams can slow down the guests.")
-	}
-	if (CHEAT_pokeblocks){
-		draw_text(640, 300 + 50, "[X] Pokeblocks - Joetube moves slower.")
-	}else{
-		draw_text(640, 300 + 50, "[  ] Pokeblocks - Joetube moves slower.")
+		draw_text(64, 325 + 50, "[  ] Light sleeper - Ava's music box drains faster.")
 	}
 }

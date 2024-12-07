@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sfx_aggro_manimo_6",
+  "%Name":"sfx_aggro_dan_3",
   "audioGroupId":{
     "name":"sfx",
     "path":"audiogroups/sfx",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.142857,
-  "name":"sfx_aggro_manimo_6",
+  "duration":1.624989,
+  "name":"sfx_aggro_dan_3",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_aggro_manimo_6.wav",
+  "soundFile":"sfx_aggro_dan_3.wav",
   "type":1,
   "volume":1.0,
 }
