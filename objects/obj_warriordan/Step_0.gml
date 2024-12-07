@@ -38,7 +38,7 @@ if (obj_game.AI_dan > 0 && !succeeded){
 			
 			}
 			if (stage = 4){
-				movetimer = 180 - round(1.5 * obj_game.AI_dan)
+				movetimer = 180
 			}else{
 				scr_setmovetimer()
 			}

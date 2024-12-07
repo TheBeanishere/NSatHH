@@ -14,7 +14,7 @@ if (!global.camflipped && !obj_office.turned){
 }
 
 if (image_speed > 0){
-	obj_ava.wind += 20
+	obj_ava.wind += 55
 }
 x = 0 - obj_office.officeoffset
 y = 0
