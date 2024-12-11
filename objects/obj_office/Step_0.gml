@@ -104,6 +104,16 @@ if (powerleft <= 0){
 	doorrightshut = false
 	global.camflipped = false
 }
-if (key_cams && powerleft > 0 && obj_roachy.camdisable <= 0){
-	instance_create_layer(0, 0, "cameraphysical", obj_cameraflippy)
+if (key_cams && powerleft > 0){
+	if (obj_roachy.camdisable <= 0){
+		instance_create_layer(0, 0, "cameraphysical", obj_cameraflippy)
+	}else{
+		with instance_create_layer(0, 0, "transstatic", obj_roomtransstatic){
+			lifetime = 13
+			image_alpha = 0.65
+			image_blend = #39D339
+		}
+		audio_play_sound(sfx_roachy_deny, 0, false)
+		obj_roachy.camdisable += 30
+	}
 }

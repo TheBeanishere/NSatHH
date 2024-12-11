@@ -185,6 +185,7 @@
     {"id":{"name":"sfx_phone_5","path":"sounds/sfx_phone_5/sfx_phone_5.yy",},},
     {"id":{"name":"sfx_pravi_sax_1","path":"sounds/sfx_pravi_sax_1/sfx_pravi_sax_1.yy",},},
     {"id":{"name":"sfx_pravi_sax_2","path":"sounds/sfx_pravi_sax_2/sfx_pravi_sax_2.yy",},},
+    {"id":{"name":"sfx_roachy_deny","path":"sounds/sfx_roachy_deny/sfx_roachy_deny.yy",},},
     {"id":{"name":"spr_beanie","path":"sprites/spr_beanie/spr_beanie.yy",},},
     {"id":{"name":"spr_BLACK","path":"sprites/spr_BLACK/spr_BLACK.yy",},},
     {"id":{"name":"spr_button_camera","path":"sprites/spr_button_camera/spr_button_camera.yy",},},

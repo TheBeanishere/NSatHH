@@ -30,10 +30,17 @@ if (obj_game.AI_roachy > 0){
 		if (global.cameraselected = cam){
 			stare -= 1
 			if (stare = 0){
-				camdisable = 90 + (obj_game.AI_roachy * 4)
+				with instance_create_layer(0, 0, "transstatic", obj_roomtransstatic){
+					lifetime = 13
+					image_alpha = 0.65
+					image_blend = #39D339
+				}
+				audio_play_sound(sfx_roachy_deny, 0, false)
+				camdisable = 90 + (obj_game.AI_roachy * 5)
 				global.camflipped = false
-				spawn = 1200 - (obj_game.AI_roachy * 30)
+				spawn = 900 - (obj_game.AI_roachy * 30)
 				cam = 0
+				obj_office.usage -= 0.55
 			}
 		}
 	}

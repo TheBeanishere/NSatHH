@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_roachy_deny",
+  "audioGroupId":{
+    "name":"sfx",
+    "path":"audiogroups/sfx",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.428571,
+  "name":"sfx_roachy_deny",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_roachy_deny.wav",
+  "type":1,
+  "volume":1.0,
+}
