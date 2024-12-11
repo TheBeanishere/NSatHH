@@ -14,7 +14,7 @@ if (obj_game.AI_dan > 0 && !succeeded){
 					camtoshow = 7
 					camtobring = 7
 				}
-				audio_play_sound(sfx_bonk_dan, 1, false)
+				audio_play_sound(sfx_bonk_dan, 1, false, 0.6)
 				scr_setmovetimer()
 			}else{
 				audio_play_sound(sfx_generator_break, 1, false)

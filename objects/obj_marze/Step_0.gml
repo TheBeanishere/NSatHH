@@ -89,7 +89,7 @@ if (obj_game.AI_marze > 0){
 					if (stage = 6){
 						var _sound = irandom_range(1,6)
 						//audio_play_sound(asset_get_index("sfx_aggro_wicked_" + string(_sound)), 1, false)
-						audio_play_sound(sfx_PH_aggro_wicked, 1, false)
+						audio_play_sound(sfx_PH_aggro_wicked, 1, false, 1.2)
 					}
 				}		
 			}
@@ -98,7 +98,7 @@ if (obj_game.AI_marze > 0){
 			scr_setmovetimer()
 			movetimer = movetimer * 2
 		}else{
-			movetimer = 120 - round(1.5 * obj_game.AI_marze)
+			movetimer = 180 - round(1.5 * obj_game.AI_marze)
 		}
 	}
 	image_index = stage

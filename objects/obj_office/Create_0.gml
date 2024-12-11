@@ -1,6 +1,6 @@
 turned = false
 officeoffset = 200
-powerleft = 2400
+powerleft = 3600
 usage = 0
 doorleftshut = false
 doorrightshut = false

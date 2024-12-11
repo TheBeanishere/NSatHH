@@ -1,11 +1,7 @@
 if (obj_office.turned && !obj_warriordan.succeeded){
 	if (!global.camflipped){
 		if (!obj_generator.off && collision_circle(mouse_x, mouse_y, 2, self, false, false) && mouse_check_button(mb_left)){
-			if (obj_game.GIMP_faulty){
-				obj_office.powerleft += 1
-			}else{
-				obj_office.powerleft += 4 - (obj_office.usage)
-			}
+			obj_office.powerleft += 7 - (obj_office.usage * 1.4)
 			image_speed = 1
 			if (!audio_is_playing(sfx_generator_crank)){
 				audio_play_sound(sfx_generator_crank, 1, true)

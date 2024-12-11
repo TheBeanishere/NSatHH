@@ -13,6 +13,7 @@ if (room = START){
 	audio_stop_all()
 }
 if (room = MENU_main){
+	audio_play_sound(mus_umbly, 0, true, 0.7)
 	global.screentype = "menu_main"
 }
 if (room = MENU_customnight){

@@ -1,2 +1,2 @@
 scr_setmovetimer()
-movetimer *= 2
+movetimer *= 8

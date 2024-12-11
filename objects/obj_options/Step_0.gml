@@ -4,6 +4,9 @@ if (global.screentype = "menu_option"){
 			case "volume":
 				
 			break;
+			case "music":
+				
+			break;
 			case "fullscreen":
 				window_set_fullscreen(!window_get_fullscreen())
 				ini_open("savedata.ini")
@@ -124,19 +127,38 @@ if (global.screentype = "menu_option"){
 		}
 	}
 	if (choice = "volume"){
-		if (keyboard_key_press(vk_right) || mouse_wheel_up()){
-			if (audio_group_get_gain(0) < 1){
-				audio_group_set_gain(0, audio_group_get_gain(0) + 0.01, 0)
+		if (keyboard_check_pressed(vk_right)){
+			if (audio_group_get_gain(sfx) < 1){
+				audio_group_set_gain(sfx, audio_group_get_gain(sfx) + 0.05, 0)
 				ini_open("savedata.ini")
-				ini_write_real("options", "volume", audio_group_get_gain(0))
+				ini_write_real("options", "sfx", audio_group_get_gain(sfx))
 				ini_close()
 			}
 		}
-		if (keyboard_key_press(vk_left) || mouse_wheel_down()){
-			if (audio_group_get_gain(0) > 0){
-				audio_group_set_gain(0, audio_group_get_gain(0) - 0.01, 0)
+		if (keyboard_check_pressed(vk_left)){
+			if (audio_group_get_gain(sfx) > 0){
+				audio_group_set_gain(sfx, audio_group_get_gain(sfx) - 0.05, 0)
 				ini_open("savedata.ini")
-				ini_write_real("options", "volume", audio_group_get_gain(0))
+				ini_write_real("options", "sfx", audio_group_get_gain(sfx))
+				ini_close()
+			}
+		}
+		
+	}
+	if (choice = "music"){
+		if (keyboard_check_pressed(vk_right)){
+			if (audio_group_get_gain(music) < 1){
+				audio_group_set_gain(music, audio_group_get_gain(music) + 0.05, 0)
+				ini_open("savedata.ini")
+				ini_write_real("options", "music", audio_group_get_gain(music))
+				ini_close()
+			}
+		}
+		if (keyboard_check_pressed(vk_left)){
+			if (audio_group_get_gain(music) > 0){
+				audio_group_set_gain(music, audio_group_get_gain(music) - 0.05, 0)
+				ini_open("savedata.ini")
+				ini_write_real("options", "music", audio_group_get_gain(music))
 				ini_close()
 			}
 		}
@@ -145,6 +167,9 @@ if (global.screentype = "menu_option"){
 	if (keyboard_check_pressed(vk_down)){
 		switch (choice){
 			case "volume":
+				choice = "music"
+			break;
+			case "music":
 				choice = "fullscreen"
 			break;
 			case "fullscreen":
@@ -179,8 +204,11 @@ if (global.screentype = "menu_option"){
 				saveerase = 0
 				choice = "erase"
 			break;
-			case "fullscreen":
+			case "music":
 				choice = "volume"
+			break;
+			case "fullscreen":
+				choice = "music"
 			break;
 			case "callskip":
 				choice = "fullscreen"

@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_jumpscare(caller){
 	show_message(caller + " killed you")
-	room_goto(GAME_yousuck)
-	global.screentype = "start"
+	room_goto(MENU_main)
+	global.screentype = "menu_main"
 	audio_stop_all()
 	global.camflipped = false
 	global.nightcompletion = 0

@@ -28,7 +28,7 @@ if (!global.camflipped){
 powerleft = clamp(powerleft, 0, 2400)
 
 if (obj_game.GIMP_faulty){	
-	powerleft -= usage * 1.3
+	powerleft -= (1/3) + usage
 }else{
 	powerleft -= usage
 }
@@ -104,6 +104,6 @@ if (powerleft <= 0){
 	doorrightshut = false
 	global.camflipped = false
 }
-if (key_cams && powerleft > 0){
+if (key_cams && powerleft > 0 && obj_roachy.camdisable <= 0){
 	instance_create_layer(0, 0, "cameraphysical", obj_cameraflippy)
 }

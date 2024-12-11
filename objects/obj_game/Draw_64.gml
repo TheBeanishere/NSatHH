@@ -1,6 +1,6 @@
 if (global.screentype = "start" && room = START){
-	draw_set_font(Normal)
-	draw_text(160, 300, "Click to start.")
+	draw_set_font(Challenge)
+	draw_text_ext(640, 360, "Warning: This game contains flashing lights, loud noises and horror themed content! Don't play if you're a coward, photosensitive or have trauma about that, alright? None of the devs are responsible for your own choices!", 40, 700)
 }
 if (room = MENU_main && !instance_exists(obj_roomtrans)){
 	draw_sprite_ext(spr_logo, 0, 640, 0 + logooffset, 1, 1, 0 + logooffset, c_white, 1)

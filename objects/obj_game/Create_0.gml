@@ -5,6 +5,9 @@ global.currentnight = 0
 global.time = 0
 customnightchallenge = "None"
 inputdelay = 0
+starttimer = 300
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
 mathiorange = #FF6A00
 logoup = true
 logooffset = 0
@@ -15,7 +18,8 @@ global.callskip = ini_read_real("options", "callskip", 0)
 global.jumpscares = ini_read_real("options", "jumpscares", 1)
 window_set_fullscreen(ini_read_real("options", "fullscreen", 1))
 global.aspectratio = ini_read_string("options", "aspectratio", "1280x720")
-audio_group_set_gain(0, ini_read_real("options", "volume", 1), 0)
+audio_group_set_gain(sfx, ini_read_real("options", "sfx", 1), 0)
+audio_group_set_gain(music, ini_read_real("options", "music", 1), 0)
 WIN_night1 = ini_read_real("nights", "night1", 0)
 WIN_night2 = ini_read_real("nights", "night2", 0)
 WIN_night3 = ini_read_real("nights", "night3", 0)

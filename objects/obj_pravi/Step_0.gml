@@ -3,7 +3,7 @@ if (obj_game.AI_pravi > 0){
 		movetimer -= 1
 		if (movetimer <= 0){
 			scr_setmovetimer()
-			movetimer *= 2
+			movetimer *= 8
 			randomize()
 			var _move = irandom_range(obj_game.AI_pravi, 20)
 			if (_move = 20 && !active){
@@ -11,13 +11,13 @@ if (obj_game.AI_pravi > 0){
 				active = true
 				cam_location = choose(1,2,3,4,5,6,8,9,11,2,4,6,8,2,4,6,8,2,4,6,8)
 				if (obj_game.GIMP_hungry){
-					obj_office.usage += 2
+					obj_office.usage += 1.6
 				}else{
-					obj_office.usage += 1
+					obj_office.usage += 0.8
 				}
 				show_debug_message("Pravi moved to " + string(cam_location))
 				var _sound = choose(sfx_pravi_sax_1, sfx_pravi_sax_2)
-				audio_play_sound(_sound, 1, true)
+				audio_play_sound(_sound, 1, true, 0.65)
 			}
 			with instance_create_layer(0, 0, "static", obj_static){
 				camtoshow = other.cam_location
@@ -37,14 +37,14 @@ if (obj_game.AI_pravi > 0){
 			active = false
 			cam_location = 0
 			if (obj_game.GIMP_hungry){
-				obj_office.usage -= 2
+				obj_office.usage -= 1.6
 			}else{
-				obj_office.usage -= 1
+				obj_office.usage -= 0.8
 			}
 			audio_stop_sound(sfx_pravi_sax_1)
 			audio_stop_sound(sfx_pravi_sax_2)
 			audio_play_sound(sfx_bonk_pravi, 1, false)
-			movetimer *= 2
+			movetimer *= 8
 		}
 	}
 }

@@ -78,8 +78,8 @@ if (!instance_exists(obj_roomtrans)){
 	}else if (portrait = "Roachy"){
 		if (position_meeting(mouse_x, mouse_y, self)){
 			draw_set_alpha(1)
-	draw_rectangle_color(mouse_x - 150, mouse_y + 30, mouse_x + 350, mouse_y + 280, c_black, c_black, c_black, c_black, false)
-			draw_text_ext(mouse_x - 135, mouse_y + 30, "Roachy appears on random cameras, don't stare too long or else he'll disable your cameras for a little.", 35, 485)
+	draw_rectangle_color(mouse_x - 350, mouse_y + 30, mouse_x + 150, mouse_y + 280, c_black, c_black, c_black, c_black, false)
+			draw_text_ext(mouse_x - 335, mouse_y + 30, "Roachy appears on random cameras, don't stare too long or else he'll disable your cameras for a little.", 35, 485)
 		}
 	}
 }

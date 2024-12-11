@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"mus_sleepykitty",
+  "audioGroupId":{
+    "name":"sfx",
+    "path":"audiogroups/sfx",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":30.0,
+  "name":"mus_sleepykitty",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_sleepykitty.wav",
+  "type":1,
+  "volume":1.0,
+}
