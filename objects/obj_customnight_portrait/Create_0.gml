@@ -12,4 +12,4 @@ c_ava = #B568C0
 c_coconut = #BD4317
 c_roachy = #39D339
 c_valerix = #353E4F
-c_evan = #2A43D3
+c_dj = #BC31A5

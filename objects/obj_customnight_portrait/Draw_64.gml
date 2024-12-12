@@ -61,19 +61,19 @@ if (!instance_exists(obj_roomtrans)){
 		if (position_meeting(mouse_x, mouse_y, self)){
 			draw_set_alpha(1)
 	draw_rectangle_color(mouse_x - 150, mouse_y + 30, mouse_x + 350, mouse_y + 280, c_black, c_black, c_black, c_black, false)
-			draw_text_ext(mouse_x - 135, mouse_y + 30, "Coconut moves to your left door, don't let him get in or else he'll disable your equipment.", 35, 485)
+			draw_text_ext(mouse_x - 135, mouse_y + 30, "Coconut moves to your left door, don't let him get in or else he'll start messing with your equipment.", 35, 485)
 		}
-	}else if (portrait = "Evan"){
+	}else if (portrait = "Valerix"){
 		if (position_meeting(mouse_x, mouse_y, self)){
 			draw_set_alpha(1)
 	draw_rectangle_color(mouse_x - 150, mouse_y + 30, mouse_x + 350, mouse_y + 280, c_black, c_black, c_black, c_black, false)
-			draw_text_ext(mouse_x - 135, mouse_y + 30, "Evan goes to your right door, and is sent back a random amount.", 35, 485)
+			draw_text_ext(mouse_x - 135, mouse_y + 30, "Valerix occasionally shows up in your office and requires you to shine your flashlight on him to get rid of him.", 35, 485)
 		}
 	}else if (portrait = "DJ"){
 		if (position_meeting(mouse_x, mouse_y, self)){
 			draw_set_alpha(1)
-	draw_rectangle_color(mouse_x - 150, mouse_y + 30, mouse_x + 350, mouse_y + 280, c_black, c_black, c_black, c_black, false)
-			draw_text_ext(mouse_x - 135, mouse_y + 30, "DJ slowly fades into your office, use your flashlight to make her go away, or else she'll kill you.", 35, 485)
+	draw_rectangle_color(mouse_x - 250, mouse_y + 30, mouse_x + 250, mouse_y + 280, c_black, c_black, c_black, c_black, false)
+			draw_text_ext(mouse_x - 235, mouse_y + 30, "DJ infects your computer with a virus, if you stare at her too long on the cameras, use your computer's antivirus to get rid of it.", 35, 485)
 		}
 	}else if (portrait = "Roachy"){
 		if (position_meeting(mouse_x, mouse_y, self)){

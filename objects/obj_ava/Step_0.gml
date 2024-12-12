@@ -5,9 +5,9 @@ if (obj_game.AI_ava > 0 && !audio_is_playing(mus_sleepykitty) && !woken){
 }
 if (!((collision_circle(mouse_x, mouse_y, 2, obj_musicbox, false, false) && mouse_check_button(mb_left)))){
 	if (obj_game.GIMP_lightsleep){	
-		wind -= (obj_game.AI_ava/1.25)
+		wind -= (obj_game.AI_ava/2)
 	}else{
-		wind -= (obj_game.AI_ava/2.5)
+		wind -= (obj_game.AI_ava/3)
 	}
 }
 if (obj_office.turned){

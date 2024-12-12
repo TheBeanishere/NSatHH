@@ -37,10 +37,9 @@ if (obj_game.AI_roachy > 0){
 				}
 				audio_play_sound(sfx_roachy_deny, 0, false)
 				camdisable = 90 + (obj_game.AI_roachy * 5)
-				global.camflipped = false
 				spawn = 900 - (obj_game.AI_roachy * 30)
 				cam = 0
-				obj_office.usage -= 0.55
+				instance_create_layer(0, 0, "cameraphysical", obj_cameraflippy)
 			}
 		}
 	}

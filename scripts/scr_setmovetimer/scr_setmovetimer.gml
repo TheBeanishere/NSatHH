@@ -24,9 +24,6 @@ function scr_setmovetimer(){
 	if (obj_game.GIMP_adrenaline){
 		movetimer *= 0.8
 	}
-	if (obj_game.CHEAT_arthritis && self.object_index != obj_marze){
-		movetimer *= 2
-	}
 	if (self.object_index = obj_marze){
 		if (obj_game.GIMP_hotsoup){
 			movetimer /= 2

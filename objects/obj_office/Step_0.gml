@@ -104,7 +104,7 @@ if (powerleft <= 0){
 	doorrightshut = false
 	global.camflipped = false
 }
-if (key_cams && powerleft > 0){
+if (key_cams && powerleft > 0 && !obj_dj.djanim && obj_dj.djpause <= 0){
 	if (obj_roachy.camdisable <= 0){
 		instance_create_layer(0, 0, "cameraphysical", obj_cameraflippy)
 	}else{
@@ -114,6 +114,6 @@ if (key_cams && powerleft > 0){
 			image_blend = #39D339
 		}
 		audio_play_sound(sfx_roachy_deny, 0, false)
-		obj_roachy.camdisable += 30
+		obj_roachy.camdisable += 13
 	}
 }

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_bonk_dj",
+  "audioGroupId":{
+    "name":"sfx",
+    "path":"audiogroups/sfx",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":4.0,
+  "name":"sfx_bonk_dj",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_bonk_dj.wav",
+  "type":1,
+  "volume":1.0,
+}

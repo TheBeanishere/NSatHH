@@ -12,7 +12,7 @@ function scr_customchallenge(){
 		AI_dan = 0
 		AI_beanie = 0
 		AI_coconut = 0
-		AI_evan = 0
+		AI_dj = 0
 		AI_valerix = 0
 		AI_roachy = 0
 		GIMP_nut = false
@@ -32,7 +32,7 @@ function scr_customchallenge(){
 		AI_dan = 14
 		AI_beanie = 13
 		AI_coconut = 12
-		AI_evan = 0
+		AI_dj = 0
 		AI_valerix = 11
 		AI_roachy = 0
 		GIMP_nut = false
@@ -52,7 +52,7 @@ function scr_customchallenge(){
 		AI_dan = 0
 		AI_beanie = 0
 		AI_coconut = 0
-		AI_evan = 12
+		AI_dj = 12
 		AI_valerix = 0
 		AI_roachy = 13
 		GIMP_nut = false
@@ -72,7 +72,7 @@ function scr_customchallenge(){
 		AI_dan = 14
 		AI_beanie = 0
 		AI_coconut = 14
-		AI_evan = 14
+		AI_dj = 14
 		AI_valerix = 14
 		AI_roachy = 0
 		GIMP_nut = false
@@ -92,7 +92,7 @@ function scr_customchallenge(){
 		AI_dan = 0
 		AI_beanie = 0
 		AI_coconut = 10
-		AI_evan = 0
+		AI_dj = 0
 		AI_valerix = 0
 		AI_roachy = 12
 		GIMP_nut = true
@@ -112,7 +112,7 @@ function scr_customchallenge(){
 		AI_dan = 18
 		AI_beanie = 10
 		AI_coconut = 18
-		AI_evan = 0
+		AI_dj = 0
 		AI_valerix = 0
 		AI_roachy = 18
 		GIMP_nut = true
@@ -132,7 +132,7 @@ function scr_customchallenge(){
 		AI_dan = 17
 		AI_beanie = 6
 		AI_coconut = 0
-		AI_evan = 0
+		AI_dj = 0
 		AI_valerix = 0
 		AI_roachy = 0
 		GIMP_nut = false
@@ -152,7 +152,7 @@ function scr_customchallenge(){
 		AI_dan = 0
 		AI_beanie = 16
 		AI_coconut = 0
-		AI_evan = 0
+		AI_dj = 0
 		AI_valerix = 8
 		AI_roachy = 0
 		GIMP_nut = false
@@ -172,7 +172,7 @@ function scr_customchallenge(){
 		AI_dan = 13
 		AI_beanie = 15
 		AI_coconut = 13
-		AI_evan = 12
+		AI_dj = 12
 		AI_valerix = 0
 		AI_roachy = 0
 		GIMP_nut = false
@@ -192,7 +192,7 @@ function scr_customchallenge(){
 		AI_dan = 9
 		AI_beanie = 13
 		AI_coconut = 9
-		AI_evan = 13
+		AI_dj = 13
 		AI_valerix = 9
 		AI_roachy = 13
 		GIMP_nut = false
@@ -212,7 +212,7 @@ function scr_customchallenge(){
 		AI_dan = 0
 		AI_beanie = 0
 		AI_coconut = 0
-		AI_evan = 0
+		AI_dj = 0
 		AI_valerix = 0
 		AI_roachy = 0
 		GIMP_nut = false
@@ -232,7 +232,7 @@ function scr_customchallenge(){
 		AI_dan = 12
 		AI_beanie = 0
 		AI_coconut = 0
-		AI_evan = 0
+		AI_dj = 0
 		AI_valerix = 9
 		AI_roachy = 0
 		GIMP_nut = false
@@ -252,7 +252,7 @@ function scr_customchallenge(){
 		AI_dan = 20
 		AI_beanie = 20
 		AI_coconut = 20
-		AI_evan = 20
+		AI_dj = 20
 		AI_valerix = 20
 		AI_roachy = 20
 		GIMP_nut = false
@@ -273,7 +273,7 @@ function scr_customchallenge(){
 		AI_dan = 20
 		AI_beanie = 20
 		AI_coconut = 20
-		AI_evan = 20
+		AI_dj = 20
 		AI_valerix = 20
 		AI_roachy = 20
 		GIMP_nut = true
@@ -283,11 +283,4 @@ function scr_customchallenge(){
 		GIMP_hungry = true
 		GIMP_hotsoup = true
 	}
-	GIMP_mathis = false
-	GIMP_party = false
-	CHEAT_kinddan = false
-	CHEAT_arthritis = false
-	CHEAT_heavysleep = false
-	CHEAT_eyes = false
-	CHEAT_pokeblocks = false
 }
