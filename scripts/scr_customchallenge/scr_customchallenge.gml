@@ -33,7 +33,7 @@ function scr_customchallenge(){
 		AI_beanie = 13
 		AI_coconut = 12
 		AI_dj = 0
-		AI_valerix = 11
+		AI_valerix = 13
 		AI_roachy = 0
 		GIMP_nut = false
 		GIMP_faulty = false

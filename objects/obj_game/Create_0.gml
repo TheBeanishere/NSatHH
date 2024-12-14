@@ -1,5 +1,6 @@
 global.screentype = "start"
 global.camflipped = false
+global.killtype = noone
 global.nightcompletion = 0
 global.currentnight = 0
 global.time = 0

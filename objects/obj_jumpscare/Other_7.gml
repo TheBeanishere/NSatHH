@@ -1,1 +1,0 @@
-room_goto(MENU_main)

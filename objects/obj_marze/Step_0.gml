@@ -44,7 +44,7 @@ if (obj_game.AI_marze > 0){
 				}
 				audio_play_sound(sfx_bonk_generic, 1, false)
 			}else{
-				scr_jumpscare("Wicked")
+				scr_jumpscare("Marze")
 			}
 		}else{
 			randomize()
@@ -52,7 +52,7 @@ if (obj_game.AI_marze > 0){
 			if (_move = 20){
 				var _feet = irandom_range(1,3)
 				audio_play_sound(asset_get_index("sfx_footsteps_" + string(_feet)), 1, false)
-				show_debug_message("Wicked moved")
+				show_debug_message("Marze moved")
 				if (stage = 0){
 					with instance_create_layer(0, 0, "static", obj_static){
 						camtoshow = 2

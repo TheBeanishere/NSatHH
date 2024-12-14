@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_coconut_2",
+  "audioGroupId":{
+    "name":"sfx",
+    "path":"audiogroups/sfx",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.463537,
+  "name":"sfx_coconut_2",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_coconut_2.wav",
+  "type":1,
+  "volume":1.0,
+}
