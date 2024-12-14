@@ -53,18 +53,16 @@ if (room = MENU_main){
 }
 if (global.time > 21720 && global.screentype = "ingame"){
 	audio_stop_all()
-	show_message("YOU WON!")
-	room_goto(START)
-	global.screentype = "start"
+	room_goto(GAME_win)
+	global.screentype = "winning"
 	global.camflipped = false
-	global.nightcompletion = 0
-	global.currentnight = 0
 }
 if (global.screentype = "customnight" && room = MENU_customnight){
 	scr_customgimpsncheats()
 	if (keyboard_check_pressed(vk_escape)){
 		audio_stop_all()
 		room_goto(MENU_main)
+		global.screentype = "menu_play"
 	}
 	if (keyboard_check_pressed(vk_enter)){
 		audio_stop_all()
@@ -76,11 +74,6 @@ if (global.screentype = "customnight" && room = MENU_customnight){
 	if (keyboard_check_pressed(vk_right)){
 		audio_play_sound(sfx_customnight_up, 1, false)
 		audio_play_sound(sfx_customnight_down, 1, false)
-		//if (customnightchallenge = "None"){
-		//	customnightchallenge = "Warmth"
-		//	np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
-		//	scr_customchallenge()
-		//}
 		switch (customnightchallenge){
 			case "None":
 				customnightchallenge = "Warmth"
@@ -172,7 +165,93 @@ if (global.screentype = "customnight" && room = MENU_customnight){
 	if (keyboard_check_pressed(vk_left)){
 		audio_play_sound(sfx_customnight_up, 1, false)
 		audio_play_sound(sfx_customnight_down, 1, false)
-		
+		switch (customnightchallenge){
+			case "None":
+				customnightchallenge = "Jesse's Challenge"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Warmth":
+				customnightchallenge = "None"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Biting Cold":
+				customnightchallenge = "Warmth"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Lullaby":
+				customnightchallenge = "Biting Cold"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Bean Boppers":
+				customnightchallenge = "Lullaby"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Nuisances":
+				customnightchallenge = "Bean Boppers"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Running in the Dark":
+				customnightchallenge = "Nuisances"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Power's cut":
+				customnightchallenge = "Running in the Dark"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Tryhards":
+				customnightchallenge = "Power's cut"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "9-13":
+				customnightchallenge = "Tryhards"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Duetsche Prazision":
+				customnightchallenge = "9-13"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Ew, it's the Europeans":
+				customnightchallenge = "Duetsche Prazision"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Warriordan's Trial":
+				customnightchallenge = "Ew, it's the Europeans"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Crackshot":
+				customnightchallenge = "Warriordan's Trial"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Mongolia Mode":
+				customnightchallenge = "Crackshot"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			case "Jesse's Challenge":
+				customnightchallenge = "Mongolia Mode"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+			default:
+				customnightchallenge = "None"
+				np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
+				scr_customchallenge()
+			break;
+		}
 	}
 }
 inputdelay -= 1

@@ -14,7 +14,6 @@ if (room = START){
 }
 if (room = MENU_main){
 	audio_play_sound(mus_umbly, 0, true, 0.7)
-	global.screentype = "menu_main"
 }
 if (room = MENU_customnight){
 	global.screentype = "menu_custom"
@@ -25,7 +24,9 @@ if (room = NIGHT_1){
 	global.currentnight = 1
 	np_setpresence("12 AM","Night " + string(global.currentnight), "bigicon", "")
 	audio_stop_all()
-	audio_play_sound(sfx_phone_1, 1, true, 1, 5)
+	if (!global.callskip){
+		audio_play_sound(sfx_phone_1, 1, false, 1, 0)
+	}
 	AI_mathi = 3
 	AI_manimo = 1
 	AI_sports = 1
@@ -54,7 +55,9 @@ if (room = NIGHT_2){
 	global.screentype = "ingame"
 	global.currentnight = 2
 	audio_stop_all()
-	audio_play_sound(sfx_phone_2, 1, true, 1, 5)
+	if (!global.callskip){
+		audio_play_sound(sfx_phone_2, 1, false, 1, 0)
+	}
 	AI_mathi = 5
 	AI_manimo = 3
 	AI_sports = 3
@@ -83,7 +86,9 @@ if (room = NIGHT_3){
 	global.screentype = "ingame"
 	global.currentnight = 3
 	audio_stop_all()
-	audio_play_sound(sfx_phone_3, 1, true, 1, 5)
+	if (!global.callskip){
+		audio_play_sound(sfx_phone_3, 1, false, 1, 0)
+	}
 	AI_mathi = 6
 	AI_manimo = 5
 	AI_sports = 5
@@ -112,7 +117,9 @@ if (room = NIGHT_4){
 	global.screentype = "ingame"
 	global.currentnight = 4
 	audio_stop_all()
-	audio_play_sound(sfx_phone_4, 1, true, 1, 5)
+	if (!global.callskip){
+		audio_play_sound(sfx_phone_4, 1, false, 1, 0)
+	}
 	AI_mathi = 9
 	AI_manimo = 7
 	AI_sports = 7
@@ -141,7 +148,9 @@ if (room = NIGHT_5){
 	global.screentype = "ingame"
 	global.currentnight = 5
 	audio_stop_all()
-	audio_play_sound(sfx_phone_5, 1, true, 1, 5)
+	if (!global.callskip){
+		audio_play_sound(sfx_phone_5, 1, false, 1, 0)
+	}
 	AI_mathi = 11
 	AI_manimo = 9
 	AI_sports = 9
@@ -226,7 +235,6 @@ if (room = NIGHT_8){
 	global.screentype = "ingame"
 	global.currentnight = 8
 	audio_stop_all()
-	//audio_play_sound(mus_customize, 1, true, 1)
 	AI_mathi = 13
 	AI_manimo = 13
 	AI_sports = 11
@@ -255,7 +263,6 @@ if (room = NIGHT_9){
 	global.screentype = "ingame"
 	global.currentnight = 9
 	audio_stop_all()
-	//audio_play_sound(mus_customize, 1, true, 1)
 	AI_mathi = 16
 	AI_manimo = 13
 	AI_sports = 13
@@ -284,7 +291,9 @@ if (room = NIGHT_10){
 	global.screentype = "ingame"
 	global.currentnight = 10
 	audio_stop_all()
-	audio_play_sound(sfx_phone_10, 1, true, 1, 5)
+	if (!global.callskip){
+		audio_play_sound(sfx_phone_10, 1, false, 1, 0)
+	}
 	AI_mathi = 18
 	AI_manimo = 15
 	AI_sports = 15
@@ -311,6 +320,7 @@ if (room = NIGHT_10){
 if (room = MENU_customnight){
 	customnightchallenge = "None"
 	global.screentype = "customnight"
+	global.currentnight = 0
 	np_setpresence("Challenge: " + customnightchallenge,"Custom Night", "bigicon", "")
 	audio_stop_all()
 	audio_play_sound(mus_customize, 1, true, 1)

@@ -4,8 +4,11 @@ draw_set_color(c_black)
 draw_rectangle(0, 0, 250, 60, false)
 draw_set_alpha(1)
 draw_set_color(c_white)
-if (room = NIGHT_1){
+if (room = NIGHT_1||room = NIGHT_2||room = NIGHT_3||room = NIGHT_4||room = NIGHT_5){
 	scr_week1time()
+}
+if (room = NIGHT_6||room = NIGHT_7||room = NIGHT_8||room = NIGHT_9||room = NIGHT_10){
+	scr_week2time()
 }
 if (room = NIGHT_CUSTOM){
 	scr_customtime()

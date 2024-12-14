@@ -9,14 +9,8 @@ if (obj_game.AI_joetube > 0){
 		if (obj_game.GIMP_adrenaline){
 			movetimer *= 0.8
 		}
-		if (obj_game.CHEAT_arthritis){
-			movetimer *= 2
-		}
 		if (obj_ava.woken){
 			movetimer *= 0.75
-		}
-		if (obj_game.CHEAT_pokeblocks){
-			movetimer *= 1.35
 		}
 		var _move = irandom_range(obj_game.AI_joetube, 20)
 		if (_move = 20){

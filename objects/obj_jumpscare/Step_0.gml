@@ -8,7 +8,7 @@ if (imagescrollx = 2559){
 if (imagescrolly = 1439){
 	imagescrolly = 0
 }
-if (lifetime = 30){
+if (lifetime = 30 || !global.jumpscares){
 	audio_stop_all()
 	room_goto(GAME_over)
 }

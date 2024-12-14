@@ -5,7 +5,5 @@ function scr_jumpscare(caller){
 	global.screentype = "death"
 	audio_stop_all()
 	global.camflipped = false
-	global.nightcompletion = 0
-	global.currentnight = 0
 	global.time = 0
 }

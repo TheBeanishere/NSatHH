@@ -6,13 +6,24 @@ if (gamemode = "week1"){
 	draw_text(x - 35, y + yoffset, "Week 1")
 	draw_set_font(Normal)
 	draw_text(x - 50, y + yoffset + 35, "The regular game.")
+	if (obj_game.WIN_night5){
+		draw_text(x - 40, y + yoffset + 55, "New Game?")
+	}else if (obj_game.WIN_night4){
+		draw_text(x - 50, y + yoffset + 55, "Continue: Night 5")
+	}else if (obj_game.WIN_night3){
+		draw_text(x - 50, y + yoffset + 55, "Continue: Night 4")
+	}else if (obj_game.WIN_night2){
+		draw_text(x - 50, y + yoffset + 55, "Continue: Night 3")
+	}else if (obj_game.WIN_night1){
+		draw_text(x - 50, y + yoffset + 55, "Continue: Night 2")
+	}
 }else if (gamemode = "week2"){
 	if (obj_game.WIN_night1 && obj_game.WIN_night2 && obj_game.WIN_night3 && obj_game.WIN_night4 && obj_game.WIN_night5 && obj_game.WIN_week1){
 		draw_set_alpha(drawing_alpha)
 		draw_set_font(Challenge)
 		draw_text(x - 45, y + yoffset + 20, "Week 2")
 		draw_set_font(Normal)
-		draw_text(x - 100, y + yoffset + 55, "Harder. One shot for the 5 nights.")
+		draw_text(x - 120, y + yoffset + 55, "Harder. Die, and you're back to Night 6.")
 	}else{
 		draw_set_alpha(drawing_alpha)
 		draw_set_font(Challenge)

@@ -1,5 +1,9 @@
 audio_stop_sound(mus_holdingdeath)
-audio_play_sound(mus_forgotteneulogy, 1, true)
+if (global.currentnight = 1 ||global.currentnight = 2 ||global.currentnight = 3 ||global.currentnight = 4 ||global.currentnight = 5){
+	audio_play_sound(mus_forgotteneulogy, 1, true)
+}else{
+	audio_play_sound(mus_snoopersnoose, 1, true)
+}
 c_mathi = #FF6A00
 c_manimo = #DF7126
 c_sports = #B3B9C4

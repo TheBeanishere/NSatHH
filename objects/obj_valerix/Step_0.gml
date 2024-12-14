@@ -23,6 +23,8 @@ if (obj_game.AI_valerix > 0){
 			var _move = irandom_range(obj_game.AI_valerix, 20)
 			if (_move = 20){
 				spawned = true
+				var _sound = choose(sfx_aggro_valerix_1, sfx_aggro_valerix_2, sfx_aggro_valerix_3)
+				audio_play_sound(_sound, 1, false)
 				sprite_index = choose(spr_valerix_1, spr_valerix_2, spr_valerix_3)
 			}
 		}
