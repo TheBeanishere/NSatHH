@@ -1,6 +1,6 @@
 if (djanim){
 	scr_setmovetimer()
-	movetimer *= 8
+	movetimer *= 5
 	image_speed = 0
 	image_index = -1
 	djanim = false

@@ -201,3 +201,8 @@ if (global.screentype = "customnight"){
 		draw_text(64, 325 + 50, "[  ] Light sleeper - Ava's music box drains faster.")
 	}
 }
+if (room = NIGHT_CUSTOM){
+	if (keyboard_check_pressed(vk_escape)){
+		room_goto(MENU_customnight)
+	}
+}

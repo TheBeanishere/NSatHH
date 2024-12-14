@@ -18,8 +18,6 @@ if (room = MENU_main){
 }
 if (room = MENU_customnight){
 	global.screentype = "menu_custom"
-	customnightchallenge = "None"
-	scr_customchallenge()
 }
 if (room = NIGHT_1){
 	global.time = 0

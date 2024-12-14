@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":27.428572,
+  "duration":70.588234,
   "name":"mus_umbly",
   "parent":{
     "name":"Sounds",

@@ -1,11 +1,18 @@
 if (obj_game.AI_dj > 0){
+	if (obj_reboot_button.reboot = 0){
+		scr_setmovetimer()
+		movetimer *= 8
+	}
 	if (!spawned){
-		movetimer -= obj_game.AI_dj/4
+		movetimer -= 1
 		if (movetimer <= 0){
 			stare = 120
-			spawned = true
+			var _move = irandom_range(obj_game.AI_dj, 20)
+			if (_move = 20){
+				spawned = true
+			}
 			scr_setmovetimer()
-			movetimer *= 8
+			movetimer *= 5
 			var _sprite = choose(spr_DJ_1, spr_DJ_2, spr_DJ_3, spr_DJ_4)
 			sprite_index = _sprite
 			image_index = 0
