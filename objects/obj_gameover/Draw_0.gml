@@ -31,3 +31,7 @@ if (global.killtype = "Mathi"){
 }else if (global.killtype = "Valerix"){
 	draw_sprite_ext(spr_gameover_portraits, 6, x, y, 1, 1, image_angle, c_valerix, 1)
 }
+draw_set_alpha(drawalpha)
+draw_set_font(Challenge)
+draw_text(0, 30, "Escape to leave.")
+draw_text(0, 5, "Enter to retry.")

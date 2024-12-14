@@ -66,6 +66,9 @@ if (obj_game.AI_joetube > 0){
 				running = false
 				audio_stop_sound(sfx_move_joetube)
 				audio_play_sound(sfx_bonk_joetube, 1, false, 12)
+				if (obj_game.GIMP_powerhungry){
+					obj_office.powerleft -= 1200
+				}
 				stage = 1
 				movetimer = 1000
 				x = 0

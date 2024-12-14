@@ -21,6 +21,8 @@ function scr_customchallenge(){
 		GIMP_lightsleep = false
 		GIMP_hungry = false
 		GIMP_hotsoup = false
+		GIMP_antivaxx = false
+		GIMP_powerhungry = false
 	}else if (customnightchallenge = "Warmth"){
 		AI_mathi = 17
 		AI_manimo = 17

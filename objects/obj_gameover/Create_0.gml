@@ -7,3 +7,4 @@ c_marze = #A733B3
 c_joetube = #4676C8
 c_beanie = #F2CE18
 c_valerix = #353E4F
+drawalpha = 0

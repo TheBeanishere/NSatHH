@@ -25,4 +25,16 @@ function scr_customgimpsncheats(){
 		GIMP_lightsleep = !GIMP_lightsleep
 		customnightchallenge = "None"
 	}
+	if (collision_rectangle(59, 332 + 46, 74, 342 + 46, obj_mouse, false, true) && mouse_check_button_pressed(mb_left)){
+		GIMP_antivaxx = !GIMP_antivaxx
+		customnightchallenge = "None"
+	}
+	if (collision_rectangle(59, 332 + 69, 74, 342 + 69, obj_mouse, false, true) && mouse_check_button_pressed(mb_left)){
+		GIMP_powerhungry = !GIMP_powerhungry
+		customnightchallenge = "None"
+	}
+	if (collision_rectangle(59, 424, 74, 434, obj_mouse, false, true) && mouse_check_button_pressed(mb_left)){
+		GIMP_blackout = !GIMP_blackout
+		customnightchallenge = "None"
+	}
 }

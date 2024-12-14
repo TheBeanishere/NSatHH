@@ -1,0 +1,25 @@
+if (name = "Sports"){
+	draw_set_color(c_white)
+	draw_set_alpha(1)
+	gpu_set_blendmode(bm_normal)
+	draw_sprite_ext(spr_jumpscare_sports, 0, 0 - imagescrollx, 0 + imagescrolly, 1, 1, 0, c_white, 1)
+	draw_sprite_ext(spr_jumpscare_sports, 0, 1280 - imagescrollx, 0 + imagescrolly, 1, 1, 0, c_white, 1)
+	draw_sprite_ext(spr_jumpscare_sports, 0, 0 - imagescrollx, -720 + imagescrolly, 1, 1, 0, c_white, 1)
+	draw_sprite_ext(spr_jumpscare_sports, 0, 1280 - imagescrollx, -720 + imagescrolly, 1, 1, 0, c_white, 1)
+	draw_sprite_ext(spr_jumpscare_sports, 1, 0 - irandom_range(-3,3), 0 + irandom_range(-3,3), 1, 1, 0, c_white, 1)
+}else if (name = "Beanie"){
+	draw_set_color(c_white)
+	draw_set_alpha(1)
+	gpu_set_blendmode(bm_normal)
+	draw_sprite_ext(spr_jumpscare_beanie, 0, 0 + imagescrollx, 0 - imagescrolly, 1, 1, 0, c_white, 1)
+	draw_sprite_ext(spr_jumpscare_beanie, 0, -1280 + imagescrollx, 0 - imagescrolly, 1, 1, 0, c_white, 1)
+	draw_sprite_ext(spr_jumpscare_beanie, 0, 0 + imagescrollx, 720 - imagescrolly, 1, 1, 0, c_white, 1)
+	draw_sprite_ext(spr_jumpscare_beanie, 0, -1280 + imagescrollx, 720 - imagescrolly, 1, 1, 0, c_white, 1)
+	draw_sprite_ext(spr_jumpscare_beanie, 1, 0 - irandom_range(-3,3), 0 + irandom_range(-3,3), 1, 1, 0, c_white, drawalpha)
+	draw_sprite_ext(spr_jumpscare_beanie, 2, 0 , 0, 1 + irandom_range(-0.05,0.05), 1 + irandom_range(-0.05,0.05), 0, c_white, 1)
+}else{
+	draw_set_color(c_white)
+	draw_set_alpha(1)
+	gpu_set_blendmode(bm_normal)
+	draw_self()
+}

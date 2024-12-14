@@ -167,9 +167,9 @@ if (global.screentype = "customnight"){
 	draw_set_font(Normal)
 	draw_text(64, 500, "Change challenge with left and right arrow keys.")
 	draw_text(64, 530, "Scroll wheel to change AI levels.")
-	draw_text(64, 560, "Click on gimps or cheats to enable or disable them.")
+	draw_text(64, 560, "Click on modifiers to enable or disable them.")
 	draw_text(64, 590, "Press enter to begin the night.")
-	draw_text(64, 225, "GIMPS:")
+	draw_text(64, 225, "MODIFIERS:")
 	if (GIMP_nut){
 		draw_text(64, 250, "[X] Nut Mode - Coconut now spawns immediately in your office.")
 	}else{
@@ -199,6 +199,21 @@ if (global.screentype = "customnight"){
 		draw_text(64, 325 + 50, "[X] Light sleeper - Ava's music box drains faster.")
 	}else{
 		draw_text(64, 325 + 50, "[  ] Light sleeper - Ava's music box drains faster.")
+	}
+	if (GIMP_antivaxx){
+		draw_text(64, 350 + 50, "[X] Antivaxx - DJ's virus cannot be removed.")
+	}else{
+		draw_text(64, 350 + 50, "[  ] Antivaxx - DJ's virus cannot be removed.")
+	}
+	if (GIMP_powerhungry){
+		draw_text(64, 375 + 50, "[X] Power Hungry - Joetube drains power upon attacking.")
+	}else{
+		draw_text(64, 375 + 50, "[  ] Power Hungry - Joetube drains power upon attacking.")
+	}
+	if (GIMP_blackout){
+		draw_text(64, 400 + 50, "[X] Blackout - The building is dark.")
+	}else{
+		draw_text(64, 400 + 50, "[  ] Blackout - The building is dark.")
 	}
 }
 if (room = NIGHT_CUSTOM){

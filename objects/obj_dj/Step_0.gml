@@ -33,8 +33,8 @@ if (obj_game.AI_dj > 0){
 			image_index = -1
 			spawned = false
 			viruslevel += 1
-			staticlevel += 0.075
-			obj_office.usage += 0.15
+			staticlevel += 0.15
+			obj_office.usage += 0.2
 			instance_create_layer(0, 0, "cameraphysical", obj_cameraflippy)
 		}
 	}

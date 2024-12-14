@@ -58,6 +58,9 @@ if (obj_game.AI_coconut > 0){
 		movetimer -= 1
 		if (movetimer = 0){
 			scr_setmovetimer()
+			if (obj_game.GIMP_nut){
+				movetimer *= 1.8
+			}
 			if (obj_office.doorbackshut){
 				randomize()
 				var _open = irandom_range(obj_game.AI_coconut, 20)
@@ -66,7 +69,8 @@ if (obj_game.AI_coconut > 0){
 					audio_stop_sound(sfx_coconut_1)
 					audio_stop_sound(sfx_coconut_3)
 					audio_stop_sound(sfx_coconut_2)
-					var _sound = choose(sfx_coconut_1, sfx_coconut_2, sfx_coconut_3)
+					audio_stop_sound(sfx_bonk_coconut)
+					var _sound = choose(sfx_bonk_coconut, sfx_bonk_coconut, sfx_bonk_coconut, sfx_coconut_1, sfx_coconut_2, sfx_coconut_3)
 					audio_play_sound(_sound, 1, false)
 					audio_play_sound(sfx_door_open, 1, false)
 					obj_office.usage -= 1
@@ -80,7 +84,8 @@ if (obj_game.AI_coconut > 0){
 					audio_stop_sound(sfx_coconut_1)
 					audio_stop_sound(sfx_coconut_3)
 					audio_stop_sound(sfx_coconut_2)
-					var _sound = choose(sfx_coconut_1, sfx_coconut_2, sfx_coconut_3)
+					audio_stop_sound(sfx_bonk_coconut)
+					var _sound = choose(sfx_bonk_coconut, sfx_bonk_coconut, sfx_bonk_coconut, sfx_coconut_1, sfx_coconut_2, sfx_coconut_3)
 					audio_play_sound(_sound, 1, false)
 					audio_play_sound(sfx_door_open, 1, false)
 					obj_office.usage -= 1
@@ -94,7 +99,8 @@ if (obj_game.AI_coconut > 0){
 					audio_stop_sound(sfx_coconut_1)
 					audio_stop_sound(sfx_coconut_3)
 					audio_stop_sound(sfx_coconut_2)
-					var _sound = choose(sfx_coconut_1, sfx_coconut_2, sfx_coconut_3)
+					audio_stop_sound(sfx_bonk_coconut)
+					var _sound = choose(sfx_bonk_coconut, sfx_bonk_coconut, sfx_bonk_coconut, sfx_coconut_1, sfx_coconut_2, sfx_coconut_3)
 					audio_play_sound(_sound, 1, false)
 					audio_play_sound(sfx_door_open, 1, false)
 					obj_office.usage -= 1

@@ -36,7 +36,11 @@ if (obj_game.AI_roachy > 0){
 					image_blend = #39D339
 				}
 				audio_play_sound(sfx_roachy_deny, 0, false)
-				camdisable = 90 + (obj_game.AI_roachy * 5)
+				if (obj_game.GIMP_faulty){	
+					camdisable = 110 + (obj_game.AI_roachy * 6)
+				}else{
+					camdisable = 90 + (obj_game.AI_roachy * 5)
+				}
 				spawn = 900 - (obj_game.AI_roachy * 30)
 				cam = 0
 				instance_create_layer(0, 0, "cameraphysical", obj_cameraflippy)

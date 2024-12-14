@@ -6,8 +6,8 @@ if (!instance_exists(obj_roomtrans)){
 	if (portrait = "Mathi"){
 		if (position_meeting(mouse_x, mouse_y, self)){
 			draw_set_alpha(1)
-	draw_rectangle_color(mouse_x - 150, mouse_y + 30, mouse_x + 350, mouse_y + 280, c_black, c_black, c_black, c_black, false)
-			draw_text_ext(mouse_x - 135, mouse_y + 30, "Mathi moves randomly and can attack from either door.", 35, 485)
+			draw_rectangle_color(mouse_x - 150, mouse_y + 30, mouse_x + 350, mouse_y + 280, c_black, c_black, c_black, c_black, false)
+			draw_text_ext(mouse_x - 135, mouse_y + 30, "Mathi moves randomly from Cam-1 and can attack from either door.", 35, 485)
 		}
 	}else if (portrait = "Manimo"){
 		if (position_meeting(mouse_x, mouse_y, self)){
@@ -25,19 +25,19 @@ if (!instance_exists(obj_roomtrans)){
 		if (position_meeting(mouse_x, mouse_y, self)){
 			draw_set_alpha(1)
 	draw_rectangle_color(mouse_x - 150, mouse_y + 30, mouse_x + 350, mouse_y + 280, c_black, c_black, c_black, c_black, false)
-			draw_text_ext(mouse_x - 135, mouse_y + 30, "Marze slowly moves towards your left door, and is stalled by staring. She's persistent.", 35, 485)
+			draw_text_ext(mouse_x - 135, mouse_y + 30, "Marze slowly moves towards your left door from Cam-2, and is stalled by staring. She's persistent, so don't let her get close.", 35, 485)
 		}
 	}else if (portrait = "Joetube"){
 		if (position_meeting(mouse_x, mouse_y, self)){
 			draw_set_alpha(1)
 	draw_rectangle_color(mouse_x - 150, mouse_y + 30, mouse_x + 350, mouse_y + 280, c_black, c_black, c_black, c_black, false)
-			draw_text_ext(mouse_x - 135, mouse_y + 30, "FnaF1 Foxy lmao, but right door and requires staring.", 35, 485)
+			draw_text_ext(mouse_x - 135, mouse_y + 30, "Stalled by staring, comes from Cam-10 and makes a mad dash to your office every now and then.", 35, 485)
 		}
 	}else if (portrait = "Dan"){
 		if (position_meeting(mouse_x, mouse_y, self)){
 			draw_set_alpha(1)
 	draw_rectangle_color(mouse_x - 150, mouse_y + 30, mouse_x + 350, mouse_y + 280, c_black, c_black, c_black, c_black, false)
-			draw_text_ext(mouse_x - 135, mouse_y + 30, "Dan comes from behind, and disables your power generator, use the door to stop him. Staring halts his progress.", 35, 485)
+			draw_text_ext(mouse_x - 135, mouse_y + 30, "Dan comes from behind on Cam-7, and disables your power generator, use the door to stop him. Staring halts his progress.", 35, 485)
 		}
 	}else if (portrait = "Pravi"){
 		if (position_meeting(mouse_x, mouse_y, self)){
@@ -61,7 +61,7 @@ if (!instance_exists(obj_roomtrans)){
 		if (position_meeting(mouse_x, mouse_y, self)){
 			draw_set_alpha(1)
 	draw_rectangle_color(mouse_x - 150, mouse_y + 30, mouse_x + 350, mouse_y + 280, c_black, c_black, c_black, c_black, false)
-			draw_text_ext(mouse_x - 135, mouse_y + 30, "Coconut moves to your left door, don't let him get in or else he'll start messing with your equipment.", 35, 485)
+			draw_text_ext(mouse_x - 135, mouse_y + 30, "Coconut silently moves to your left door from Cam-4, don't let him get in or else he'll start messing with your equipment.", 35, 485)
 		}
 	}else if (portrait = "Valerix"){
 		if (position_meeting(mouse_x, mouse_y, self)){

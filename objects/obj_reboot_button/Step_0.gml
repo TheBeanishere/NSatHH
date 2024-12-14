@@ -3,7 +3,7 @@ if (obj_game.GIMP_faulty){
 }else{
 	reboot += 2
 }
-if (global.camflipped = true && obj_game.AI_dj > 0){
+if (global.camflipped = true && obj_game.AI_dj > 0 && !obj_game.GIMP_antivaxx){
 	if (reboot > 200 && position_meeting(mouse_x, mouse_y, self) && mouse_check_button_pressed(mb_left)){
 		reboot = 0
 		audio_play_sound(sfx_bonk_dj, 0, false)

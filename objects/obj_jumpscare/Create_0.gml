@@ -1,4 +1,8 @@
 lifetime = 0
+imagescrolly = 0
+imagescrollx = 0
+drawalpha = 0
+randomize()
 audio_play_sound(mus_holdingdeath, 1, false)
 if (name = "Mathi"){
 	global.killtype = "Mathi"
@@ -12,6 +16,7 @@ if (name = "Manimo"){
 }
 if (name = "Sports"){
 	global.killtype = "Sports"
+	image_alpha = 0
 	audio_play_sound(sfx_jumpscare_sports, 1, false)
 	sprite_index = spr_jumpscare_sports
 }
