@@ -29,6 +29,14 @@ if (global.currentnight = 1){
 	ini_write_real("nights", "night5", obj_game.WIN_night5)
 	ini_write_real("weeks", "week1", obj_game.WIN_week1)
 	ini_close()
+}else if (global.currentnight = 6){
+	
+}else if (global.currentnight = 7){
+	
+}else if (global.currentnight = 8){
+	
+}else if (global.currentnight = 9){
+	
 }else if (global.currentnight = 10){
 	ini_open("savedata.ini")
 	obj_game.WIN_night6 = true
@@ -45,7 +53,7 @@ if (global.currentnight = 1){
 	ini_write_real("weeks", "week2", obj_game.WIN_week2)
 	ini_close()
 }else{
-	switch (global.currentnight){
+	switch (obj_game.customnightchallenge){
 		case "None":
 			
 		break;

@@ -4,6 +4,7 @@ if (keyboard_check_pressed(ord("F"))||keyboard_check_pressed(vk_f11)){
 if (global.screentype = "start"){
 	starttimer -= 1
 	if (starttimer <= 0){
+		global.screentype = "menu_main"
 		randomize()
 		var _thing = irandom_range(1,8473)
 		if (_thing < 10){
@@ -16,7 +17,7 @@ if (global.screentype = "start"){
 	}
 }
 if (global.screentype = "ingame"){
-	global.time += 1
+	global.time += 100
 }
 if (room = MENU_main){
 	if (logooffset <= -1){

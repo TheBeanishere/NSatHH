@@ -28,6 +28,7 @@ if (gamemode = "week1"){
 	image_index = 0
 	if (position_meeting(mouse_x, mouse_y, self) && mouse_check_button_pressed(mb_left) && !instance_exists(obj_roomtrans)){
 		if (obj_game.WIN_night5){
+			ini_open("savedata.ini")
 			ini_write_real("nights", "night1", 0)
 			ini_write_real("nights", "night2", 0)
 			ini_write_real("nights", "night3", 0)
@@ -38,6 +39,7 @@ if (gamemode = "week1"){
 			obj_game.WIN_night3 = ini_read_real("nights", "night3", 0)
 			obj_game.WIN_night4 = ini_read_real("nights", "night4", 0)
 			obj_game.WIN_night5 = ini_read_real("nights", "night5", 0)
+			ini_close()
 			with instance_create_layer(0, 0, "trans", obj_roomtrans){
 				roomdes = NIGHT_1
 				loadtext = "12 AM Night 1"
@@ -73,6 +75,7 @@ if (gamemode = "week1"){
 	if (obj_game.WIN_week1){
 		image_index = 1
 		if (position_meeting(mouse_x, mouse_y, self) && mouse_check_button_pressed(mb_left) && !instance_exists(obj_roomtrans)){
+			ini_open("savedata.ini")
 			ini_write_real("nights", "night6", 0)
 			ini_write_real("nights", "night7", 0)
 			ini_write_real("nights", "night8", 0)
@@ -83,6 +86,7 @@ if (gamemode = "week1"){
 			obj_game.WIN_night8 = ini_read_real("nights", "night8", 0)
 			obj_game.WIN_night9 = ini_read_real("nights", "night9", 0)
 			obj_game.WIN_night10 = ini_read_real("nights", "night10", 0)
+			ini_close()
 			with instance_create_layer(0, 0, "trans", obj_roomtrans){
 				roomdes = NIGHT_6
 				loadtext = "6 PM Night 6"

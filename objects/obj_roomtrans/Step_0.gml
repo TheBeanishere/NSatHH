@@ -8,4 +8,7 @@ if (lifetime = 10){
 }
 if (lifetime <= 0){
 	room_goto(roomdes)
+	if (roomdes = MENU_main){
+		global.screentype = "menu_play"
+	}
 }

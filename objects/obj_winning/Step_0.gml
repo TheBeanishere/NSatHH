@@ -4,7 +4,7 @@ if (keyboard_check(vk_escape)){
 	global.screentype = "menu_play"
 	with instance_create_layer(0, 0, "trans", obj_roomtrans){
 		roomdes = MENU_main
-		loadtext = "Loading" 
+		loadtext = "Loading..." 
 	}
 }
 if (keyboard_check(vk_enter)){
