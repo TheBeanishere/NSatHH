@@ -10,7 +10,7 @@ if (room = MENU_main && !instance_exists(obj_roomtrans)){
 	}
 	if (global.screentype = "menu_credits"){
 		draw_set_font(Challenge)
-		draw_text(128, 100, "Beanie Bopper - Art, Coding, SFX, and voicing herself")
+		draw_text(128, 100, "Beanie Bopper - Art, Music, Coding, SFX, and voicing herself")
 		draw_text(128, 130, "Mathi5000 - Voicing Mathi")
 		draw_text(128, 160, "Pravi - Playing his saxophone")
 		draw_text(128, 190, "Manimo - Voicing Manimo")
@@ -20,7 +20,7 @@ if (room = MENU_main && !instance_exists(obj_roomtrans)){
 		draw_text(128, 310, "The_Joetube - Voicing Joetube")
 		draw_text(128, 340, "Warriordan2008 - Voicing Warriordan")
 		draw_text(128, 370, "UhDxNg_ - Voicing DX(Phone guy)")
-		draw_text(128, 400, "Vocal - Composed some tunes")
+		draw_text(128, 400, "Vocal - Composed Ava's music box")
 		draw_text(128, 460, "Scott Cawthon - Made Five Nights at Freddy's")
 		draw_text(128, 490, "freesound.ord - Original source of SFX")
 		
