@@ -50,7 +50,7 @@ if (keyboard_check(vk_enter)){
 			roomdes = NIGHT_9
 			loadtext = "6 PM Night 9" 
 		}
-	}else if (global.currentnight = 9){
+	}else if (global.currentnight = 9 && obj_game.customnightchallenge != "9-13"){
 		with instance_create_layer(0, 0, "trans", obj_roomtrans){
 			roomdes = NIGHT_10
 			loadtext = "6 PM Night 10" 

@@ -1,4 +1,4 @@
-if (global.screentype = "menu_play"){
+if (global.screentype = "menu_play" || room = MENU_customnight){
 	y += -(y - 608)/15
 }else{
 	y += -(y - 720)/15

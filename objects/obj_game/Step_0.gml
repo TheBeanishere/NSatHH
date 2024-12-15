@@ -17,7 +17,7 @@ if (global.screentype = "start"){
 	}
 }
 if (global.screentype = "ingame"){
-	global.time += 100
+	global.time += 1
 }
 if (room = MENU_main){
 	if (logooffset <= -1){
