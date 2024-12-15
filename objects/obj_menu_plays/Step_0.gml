@@ -88,8 +88,8 @@ if (gamemode = "week1"){
 			obj_game.WIN_night10 = ini_read_real("nights", "night10", 0)
 			ini_close()
 			with instance_create_layer(0, 0, "trans", obj_roomtrans){
-				roomdes = NIGHT_6
-				loadtext = "6 PM Night 6"
+				roomdes = intwo
+				loadtext = ""
 			}
 		}
 	}else{

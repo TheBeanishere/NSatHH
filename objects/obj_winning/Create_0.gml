@@ -35,7 +35,7 @@ if (global.currentnight = 1){
 	
 }else if (global.currentnight = 8){
 	
-}else if (global.currentnight = 9){
+}else if (global.currentnight = 9 && obj_game.customnightchallenge != "9-13"){
 	
 }else if (global.currentnight = 10){
 	ini_open("savedata.ini")
@@ -90,7 +90,7 @@ if (global.currentnight = 1){
 		case "Running in the Dark":
 			ini_open("savedata.ini")
 			obj_game.WIN_challenge_dark = true
-			ini_write_real("challenges", "darj", obj_game.WIN_challenge_dark)
+			ini_write_real("challenges", "dark", obj_game.WIN_challenge_dark)
 			ini_close()
 		break;
 		case "Power's cut":

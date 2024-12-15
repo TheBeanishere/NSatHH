@@ -83,6 +83,7 @@
     {"id":{"name":"obj_generator","path":"objects/obj_generator/obj_generator.yy",},},
     {"id":{"name":"obj_generatorcrank","path":"objects/obj_generatorcrank/obj_generatorcrank.yy",},},
     {"id":{"name":"obj_introcutscene","path":"objects/obj_introcutscene/obj_introcutscene.yy",},},
+    {"id":{"name":"obj_introcutscene2","path":"objects/obj_introcutscene2/obj_introcutscene2.yy",},},
     {"id":{"name":"obj_joetube","path":"objects/obj_joetube/obj_joetube.yy",},},
     {"id":{"name":"obj_jumpscare","path":"objects/obj_jumpscare/obj_jumpscare.yy",},},
     {"id":{"name":"obj_mainmenu_button","path":"objects/obj_mainmenu_button/obj_mainmenu_button.yy",},},
@@ -112,6 +113,7 @@
     {"id":{"name":"GAME_over","path":"rooms/GAME_over/GAME_over.yy",},},
     {"id":{"name":"GAME_win","path":"rooms/GAME_win/GAME_win.yy",},},
     {"id":{"name":"intro","path":"rooms/intro/intro.yy",},},
+    {"id":{"name":"intwo","path":"rooms/intwo/intwo.yy",},},
     {"id":{"name":"KILL_Beanie","path":"rooms/KILL_Beanie/KILL_Beanie.yy",},},
     {"id":{"name":"KILL_Joetube","path":"rooms/KILL_Joetube/KILL_Joetube.yy",},},
     {"id":{"name":"KILL_Manimo","path":"rooms/KILL_Manimo/KILL_Manimo.yy",},},
@@ -332,6 +334,7 @@
     {"roomId":{"name":"intro","path":"rooms/intro/intro.yy",},},
     {"roomId":{"name":"WIN_1","path":"rooms/WIN_1/WIN_1.yy",},},
     {"roomId":{"name":"WIN_2","path":"rooms/WIN_2/WIN_2.yy",},},
+    {"roomId":{"name":"intwo","path":"rooms/intwo/intwo.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

@@ -22,7 +22,7 @@ if (room = MENU_main && !instance_exists(obj_roomtrans)){
 		draw_text(128, 370, "UhDxNg_ - Voicing DX(Phone guy)")
 		draw_text(128, 400, "Vocal - Composed Ava's music box")
 		draw_text(128, 460, "Scott Cawthon - Made Five Nights at Freddy's")
-		draw_text(128, 490, "freesound.ord - Original source of SFX")
+		draw_text(128, 490, "freesound.org - Original source of SFX")
 		
 	}
 	if (obj_mainmenu_button.guidebook_alpha > 0){
