@@ -39,7 +39,7 @@ if (gamemode = "week1"){
 			obj_game.WIN_night4 = ini_read_real("nights", "night4", 0)
 			obj_game.WIN_night5 = ini_read_real("nights", "night5", 0)
 			with instance_create_layer(0, 0, "trans", obj_roomtrans){
-				roomdes = NIGHT_5
+				roomdes = NIGHT_1
 				loadtext = "12 AM Night 1"
 			}
 		}else if (obj_game.WIN_night4){
@@ -64,8 +64,8 @@ if (gamemode = "week1"){
 			}
 		}else{
 			with instance_create_layer(0, 0, "trans", obj_roomtrans){
-				roomdes = NIGHT_1
-				loadtext = "12 AM Night 1"
+				roomdes = intro
+				loadtext = ""
 			}
 		}
 	}
