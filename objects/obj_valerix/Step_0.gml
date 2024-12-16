@@ -11,7 +11,7 @@ if (obj_game.AI_valerix > 0){
 				pain = 30
 			}
 		}
-		if (spawnedtime = 180 + ((30*2)/obj_game.AI_valerix)){
+		if (spawnedtime = 240 + ((30*2)/obj_game.AI_valerix)){
 			scr_jumpscare("Valerix")
 		}
 	}else{

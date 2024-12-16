@@ -42,23 +42,23 @@ if (keyboard_check_pressed(vk_enter)){
 		}
 	}else if (global.currentnight = 7){
 		with instance_create_layer(0, 0, "trans", obj_roomtrans){
-			roomdes = NIGHT_7
-			loadtext = "6 PM Night 7" 
+			roomdes = NIGHT_6
+			loadtext = "6 PM Night 6" 
 		}
 	}else if (global.currentnight = 8){
 		with instance_create_layer(0, 0, "trans", obj_roomtrans){
-			roomdes = NIGHT_8
-			loadtext = "6 PM Night 8" 
+			roomdes = NIGHT_6
+			loadtext = "6 PM Night 6" 
 		}
 	}else if (global.currentnight = 9){
 		with instance_create_layer(0, 0, "trans", obj_roomtrans){
-			roomdes = NIGHT_9
-			loadtext = "6 PM Night 9" 
+			roomdes = NIGHT_6
+			loadtext = "6 PM Night 6" 
 		}
 	}else if (global.currentnight = 10){
 		with instance_create_layer(0, 0, "trans", obj_roomtrans){
-			roomdes = NIGHT_10
-			loadtext = "6 PM Night 10" 
+			roomdes = NIGHT_6
+			loadtext = "6 PM Night 6"  
 		}
 	}else{
 		with instance_create_layer(0, 0, "trans", obj_roomtrans){

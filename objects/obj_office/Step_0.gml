@@ -26,6 +26,7 @@ if (!global.camflipped){
 }
 
 powerleft = clamp(powerleft, 0, 3600)
+usage = clamp(usage, 0, 4.5)
 
 if (obj_game.GIMP_faulty){	
 	powerleft -= (1/4) + usage

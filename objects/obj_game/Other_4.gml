@@ -25,7 +25,7 @@ if (room = NIGHT_1){
 	np_setpresence("12 AM","Night " + string(global.currentnight), "bigicon", "")
 	audio_stop_all()
 	if (!global.callskip){
-		audio_play_sound(sfx_phone_1, 1, false, 0.8)
+		audio_play_sound(sfx_phone_1, 1, false, 0.4)
 	}
 	AI_mathi = 3
 	AI_manimo = 1
@@ -56,7 +56,7 @@ if (room = NIGHT_2){
 	global.currentnight = 2
 	audio_stop_all()
 	if (!global.callskip){
-		audio_play_sound(sfx_phone_2, 1, false, 0.8)
+		audio_play_sound(sfx_phone_2, 1, false, 0.4)
 	}
 	AI_mathi = 5
 	AI_manimo = 3
@@ -87,7 +87,7 @@ if (room = NIGHT_3){
 	global.currentnight = 3
 	audio_stop_all()
 	if (!global.callskip){
-		audio_play_sound(sfx_phone_3, 1, false, 0.8)
+		audio_play_sound(sfx_phone_3, 1, false, 0.4)
 	}
 	AI_mathi = 6
 	AI_manimo = 5
@@ -118,7 +118,7 @@ if (room = NIGHT_4){
 	global.currentnight = 4
 	audio_stop_all()
 	if (!global.callskip){
-		audio_play_sound(sfx_phone_4, 1, false, 0.8)
+		audio_play_sound(sfx_phone_4, 1, false, 0.4)
 	}
 	AI_mathi = 9
 	AI_manimo = 7
@@ -149,7 +149,7 @@ if (room = NIGHT_5){
 	global.currentnight = 5
 	audio_stop_all()
 	if (!global.callskip){
-		audio_play_sound(sfx_phone_5, 1, false, 0.8)
+		audio_play_sound(sfx_phone_5, 1, false, 0.4)
 	}
 	AI_mathi = 11
 	AI_manimo = 9
@@ -292,7 +292,7 @@ if (room = NIGHT_10){
 	global.currentnight = 10
 	audio_stop_all()
 	if (!global.callskip){
-		audio_play_sound(sfx_phone_10, 1, false, 0.8)
+		audio_play_sound(sfx_phone_10, 1, false, 0.4)
 	}
 	AI_mathi = 18
 	AI_manimo = 15

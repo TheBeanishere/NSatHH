@@ -7,24 +7,24 @@ if (obj_game.AI_coconut > 0){
 	}
 	if (!inoffice){
 		movetimer -= 1
-		if (movetimer = 0){
-			randomize()
-			var _move = irandom_range(obj_game.AI_coconut, 20)
-			if (_move = 20){
-				if (stage = 3){
-					if (obj_office.doorleftshut){
-						stage = 0
-						with instance_create_layer(0, 0, "static", obj_static){
-							camtoshow = 8
-							camtobring = 4
-						}
-						audio_play_sound(sfx_bonk_coconut, 1, false)
-					}else{
-						stage += 1
-						inoffice = true
-						scr_setmovetimer()
+		if (movetimer <= 0){
+			if (stage = 3){
+				if (obj_office.doorleftshut){
+					stage = 0
+					with instance_create_layer(0, 0, "static", obj_static){
+						camtoshow = 8
+						camtobring = 4
 					}
+					audio_play_sound(sfx_bonk_coconut, 1, false)
 				}else{
+					stage += 1
+					inoffice = true
+					scr_setmovetimer()
+				}
+			}else{
+				randomize()
+				var _move = irandom_range(obj_game.AI_coconut, 20)
+				if (_move = 20){
 					stage += 1
 					if (stage = 1){
 						with instance_create_layer(0, 0, "static", obj_static){
@@ -43,15 +43,15 @@ if (obj_game.AI_coconut > 0){
 						}
 					}
 				}
-			}
-			if (stage = 1 || stage = 2|| stage = 0){
-				scr_setmovetimer()
-				movetimer *= 3
-			}else if (stage = 3){
-				movetimer = 180 - round(1.5 * obj_game.AI_coconut)
-				randomize()
-				var _sound = choose(sfx_aggro_coconut_1, sfx_aggro_coconut_2, sfx_aggro_coconut_3)
-				audio_play_sound(_sound, 1, false)
+				if (stage = 1 || stage = 2|| stage = 0){
+					scr_setmovetimer()
+					movetimer *= 3
+				}else if (stage = 3){
+					movetimer = 180 - round(1.5 * obj_game.AI_coconut)
+					randomize()
+					var _sound = choose(sfx_aggro_coconut_1, sfx_aggro_coconut_2, sfx_aggro_coconut_3)
+					audio_play_sound(_sound, 1, false)
+				}
 			}
 		}
 	}else{
