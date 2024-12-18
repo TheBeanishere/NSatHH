@@ -1,7 +1,7 @@
 draw_set_font(Office)
 draw_set_alpha(0.5)
 draw_set_color(c_black)
-draw_rectangle(0, 0, 180, 180, false)
+draw_rectangle(0, 0, 190, 180, false)
 draw_set_alpha(1)
 if (obj_pravi.active){
 	draw_set_color(c_pravi)
