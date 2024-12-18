@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_classic_camera_map",
+  "%Name":"obj_classic_office",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_classic_camera_map",
+  "name":"obj_classic_office",
   "overriddenProperties":[],
   "parent":{
     "name":"classic",
@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_classic_camera_map",
-    "path":"sprites/spr_classic_camera_map/spr_classic_camera_map.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
