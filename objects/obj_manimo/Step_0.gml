@@ -11,7 +11,7 @@ if (obj_game.AI_manimo > 0){
 					camtoshow = 11
 					camtobring = 4
 				}
-				audio_play_sound(sfx_bonk_generic, 1, false)
+				audio_play_sound(sfx_bonk_right, 1, false)
 				stage = 0
 				scr_setmovetimer()
 			}else{
@@ -59,7 +59,7 @@ if (obj_game.AI_manimo > 0){
 					stage += 1
 					if (stage = 6){
 						var _sound = irandom_range(1,3)
-						audio_play_sound(asset_get_index("sfx_aggro_manimo_" + string(_sound)), 1, false)
+						audio_play_sound(asset_get_index("sfx_aggro_manimo_" + string(_sound)), 1, false, 2)
 					}
 				}		
 			}
@@ -67,7 +67,7 @@ if (obj_game.AI_manimo > 0){
 		if (stage != 6){
 			scr_setmovetimer()
 		}else{
-			movetimer = 120 - round(1.5 * obj_game.AI_manimo)
+			movetimer = 180
 		}
 	}
 	image_index = stage

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.714286,
+  "duration":3.255215,
   "name":"sfx_aggro_coconut_1",
   "parent":{
     "name":"Sounds",

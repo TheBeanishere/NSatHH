@@ -11,7 +11,7 @@ if (obj_game.AI_sports > 0){
 					camtoshow = 8
 					camtobring = 3
 				}
-				audio_play_sound(sfx_bonk_generic, 1, false)
+				audio_play_sound(sfx_bonk_left, 1, false)
 				stage = 0
 			}else{
 				scr_jumpscare("Sports")
@@ -55,7 +55,7 @@ if (obj_game.AI_sports > 0){
 			if (stage = 1 || stage = 2|| stage = 3||stage = 0){
 					scr_setmovetimer()
 			}else{
-				movetimer = 180 - round(1.5 * obj_game.AI_sports)
+				movetimer = 180
 			}
 		}
 	}

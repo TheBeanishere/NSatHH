@@ -1,6 +1,6 @@
 if (obj_game.AI_joetube > 0){
-	if (global.cameraselected = 10 && global.camflipped){
-		movetimer -= obj_game.AI_joetube/8
+	if (global.camflipped){
+		movetimer = movetimer
 	}else{
 		movetimer -= obj_game.AI_joetube/4
 	}

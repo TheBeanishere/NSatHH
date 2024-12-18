@@ -16,7 +16,7 @@ if (obj_game.AI_valerix > 0){
 		}
 	}else{
 		movetimer -= 1
-		if (movetimer = 0){
+		if (movetimer <= 0){
 			scr_setmovetimer()
 			movetimer *= 6
 			randomize()

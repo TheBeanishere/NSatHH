@@ -12,7 +12,7 @@ if (obj_game.AI_mathi > 0){
 					camtoshow = 11
 					camtobring = 1
 				}
-				audio_play_sound(sfx_bonk_generic, 1, false)
+				audio_play_sound(sfx_bonk_right, 1, false)
 				scr_setmovetimer()
 			}else{
 				scr_jumpscare("Mathi")
@@ -23,7 +23,7 @@ if (obj_game.AI_mathi > 0){
 					camtoshow = 8
 					camtobring = 1
 				}
-				audio_play_sound(sfx_bonk_generic, 1, false)
+				audio_play_sound(sfx_bonk_left, 1, false)
 				cam_location = 1
 				scr_setmovetimer()
 			}else{
@@ -67,12 +67,12 @@ if (obj_game.AI_mathi > 0){
 				}
 				if (cam_location = 11){
 					var _sound = choose(1,2,3,1,2,3,1,2,3,4)
-					audio_play_sound(asset_get_index(("sfx_move_mathi_" + string(_sound))), 1, false)
-					movetimer = 180 - round(1.5 * obj_game.AI_mathi)
+					audio_play_sound(asset_get_index(("sfx_move_right_mathi_" + string(_sound))), 1, false)
+					movetimer = 180
 				}else if (cam_location = 8){
 					var _sound = choose(1,2,3,1,2,3,1,2,3,4)
-					audio_play_sound(asset_get_index(("sfx_move_mathi_" + string(_sound))), 1, false)
-					movetimer = 180 - round(1.5 * obj_game.AI_mathi)
+					audio_play_sound(asset_get_index(("sfx_move_left_mathi_" + string(_sound))), 1, false)
+					movetimer = 180
 				}else{
 					scr_setmovetimer()
 				}

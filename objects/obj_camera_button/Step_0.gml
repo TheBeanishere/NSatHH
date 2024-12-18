@@ -7,9 +7,8 @@ if (obj_roachy.camdisable > 0){
 			image_blend = #39D339
 		}
 		audio_play_sound(sfx_roachy_deny, 0, false)
-		obj_roachy.camdisable += 13
 	}
-}else{
+}else if (!instance_exists(obj_cameraflippy)){
 	image_blend = c_white
 	if (position_meeting(mouse_x, mouse_y, self) && !instance_exists(obj_cameraflippy) && !hovered && obj_office.powerleft > 0 && !obj_dj.djanim && obj_dj.djpause <= 0){
 		instance_create_layer(0, 0, "cameraphysical", obj_cameraflippy)

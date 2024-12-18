@@ -10,7 +10,7 @@ if (global.screentype = "start"){
 		if (_thing < 10){
 			room_goto(boot)
 		}else{
-			room_goto(MENU_main)	
+			room_goto(CLASSICNIGHT_1)	
 		}
 		draw_set_halign(fa_left)
 		draw_set_valign(fa_top)

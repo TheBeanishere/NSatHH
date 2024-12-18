@@ -120,7 +120,7 @@ if (global.currentnight = 1){
 		case "Ew, it's the Europeans":
 			ini_open("savedata.ini")
 			obj_game.WIN_challenge_europe = true
-			ini_write_real("challenges", "warmth", obj_game.WIN_challenge_europe)
+			ini_write_real("challenges", "europe", obj_game.WIN_challenge_europe)
 			ini_close()
 		break;
 		case "Warriordan's Trial":
