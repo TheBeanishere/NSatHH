@@ -5,8 +5,8 @@ if (obj_game.AI_pravi > 0){
 			scr_setmovetimer()
 			movetimer *= 8
 			randomize()
-			var _move = irandom_range(obj_game.AI_pravi, 20)
-			if (_move = 20 && !active){
+			var _move = irandom_range(1, 20)
+			if (_move <= obj_game.AI_pravi && !active){
 				shyness = 0
 				active = true
 				cam_location = choose(1,2,3,4,5,6,8,9,11,2,4,6,8,2,4,6,8,2,4,6,8)

@@ -23,8 +23,8 @@ if (obj_game.AI_coconut > 0){
 				}
 			}else{
 				randomize()
-				var _move = irandom_range(obj_game.AI_coconut, 20)
-				if (_move = 20){
+				var _move = irandom_range(1, 20)
+				if (_move <= obj_game.AI_coconut){
 					stage += 1
 					if (stage = 1){
 						with instance_create_layer(0, 0, "static", obj_static){
@@ -66,8 +66,8 @@ if (obj_game.AI_coconut > 0){
 			if (_door = 1){
 				if (!obj_office.doorbackshut){
 					randomize()
-					var _open = irandom_range(obj_game.AI_coconut, 20)
-					if (_open = 20){
+					var _open = irandom_range(1, 20)
+					if (_open <= obj_game.AI_coconut){
 						obj_office.doorbackshut = true
 						audio_stop_sound(sfx_coconut_1)
 						audio_stop_sound(sfx_coconut_3)
@@ -82,8 +82,8 @@ if (obj_game.AI_coconut > 0){
 			}else if (_door = 2){
 				if (!obj_office.doorleftshut){
 					randomize()
-					var _open = irandom_range(obj_game.AI_coconut, 20)
-					if (_open = 20){
+					var _open = irandom_range(1, 20)
+					if (_open <= obj_game.AI_coconut){
 						obj_office.doorleftshut = true
 						audio_stop_sound(sfx_coconut_1)
 						audio_stop_sound(sfx_coconut_3)
@@ -98,8 +98,8 @@ if (obj_game.AI_coconut > 0){
 			}else if (_door = 3){
 				if (!obj_office.doorrightshut){
 					randomize()
-					var _open = irandom_range(obj_game.AI_coconut, 20)
-					if (_open = 20){
+					var _open = irandom_range(1, 20)
+					if (_open <= obj_game.AI_coconut){
 						obj_office.doorrightshut = true
 						audio_stop_sound(sfx_coconut_1)
 						audio_stop_sound(sfx_coconut_3)

@@ -18,8 +18,8 @@ if (obj_game.AI_sports > 0){
 			}
 		}else{
 			randomize()
-			var _move = irandom_range(obj_game.AI_sports, 20)
-			if (_move = 20){
+			var _move = irandom_range(1, 20)
+			if (_move <= obj_game.AI_sports){
 				var _feet = irandom_range(1,3)
 				audio_play_sound(asset_get_index("sfx_footsteps_" + string(_feet)), 1, false)
 				show_debug_message("Sports moved")

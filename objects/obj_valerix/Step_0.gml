@@ -20,8 +20,8 @@ if (obj_game.AI_valerix > 0){
 			scr_setmovetimer()
 			movetimer *= 6
 			randomize()
-			var _move = irandom_range(obj_game.AI_valerix, 20)
-			if (_move = 20){
+			var _move = irandom_range(1, 20)
+			if (_move <= obj_game.AI_valerix){
 				spawned = true
 				var _sound = choose(sfx_aggro_valerix_1, sfx_aggro_valerix_2, sfx_aggro_valerix_3)
 				audio_play_sound(_sound, 1, false)

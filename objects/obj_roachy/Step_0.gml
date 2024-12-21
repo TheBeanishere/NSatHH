@@ -19,8 +19,8 @@ if (obj_game.AI_roachy > 0){
 			randomize()
 			image_index = irandom_range(0,5)
 			randomize()
-			var _move = irandom_range(obj_game.AI_roachy, 20)
-			if (_move = 20){
+			var _move = irandom_range(1, 20)
+			if (_move <= obj_game.AI_roachy){
 				cam = irandom_range(1,11)
 			}else{
 				cam = 0

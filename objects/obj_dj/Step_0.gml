@@ -7,8 +7,8 @@ if (obj_game.AI_dj > 0){
 		movetimer -= 1
 		if (movetimer <= 0){
 			stare = 120
-			var _move = irandom_range(obj_game.AI_dj, 20)
-			if (_move = 20){
+			var _move = irandom_range(1, 20)
+			if (_move <= obj_game.AI_dj){
 				spawned = true
 			}
 			scr_setmovetimer()

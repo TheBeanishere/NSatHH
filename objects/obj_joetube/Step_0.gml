@@ -12,8 +12,8 @@ if (obj_game.AI_joetube > 0){
 		if (obj_ava.woken){
 			movetimer *= 0.75
 		}
-		var _move = irandom_range(obj_game.AI_joetube, 20)
-		if (_move = 20){
+		var _move = irandom_range(1, 20)
+		if (_move <= obj_game.AI_joetube){
 			if (stage = 4){
 				with instance_create_layer(0, 0, "static", obj_static){
 					camtoshow = 10

@@ -26,8 +26,8 @@ if (obj_game.AI_dan > 0 && !succeeded){
 			}
 		}else{
 			randomize()
-			var _move = irandom_range(obj_game.AI_dan, 20)
-			if (_move = 20){
+			var _move = irandom_range(1, 20)
+			if (_move <= obj_game.AI_dan){
 				with instance_create_layer(0, 0, "static", obj_static){
 					camtoshow = 7
 					camtobring = 7
