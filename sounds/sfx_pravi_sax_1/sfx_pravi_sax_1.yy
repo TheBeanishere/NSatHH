@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":11.133968,
+  "duration":19.902449,
   "name":"sfx_pravi_sax_1",
   "parent":{
     "name":"Sounds",
